@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8 ]><html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js ie ie8 lte8 lte9"><![endif]-->
+<!--[if IE 9 ]><html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js ie ie9 lte9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js"><!--<![endif]-->
+    <head>
+        @* Meta Data *@
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=no" />
+        <title>@ViewBag.Title | Lafayette Testing Services</title>
+        <meta name="description" content="@ViewBag.Description" />
+        <meta name="author" content="Lafayette Testing Services" />
+        <meta name="copyright" content="Copyright @DateTime.Now.Year Lafayette Testing Services. All Rights Reserved." />
+        <meta name="verify-v1" content="EhWLMuLf5BSsbU5JQVghjEW4HRQhDSB6jIq8kDehDy8=" />
+        
+        @* Bookmark Icons *@
+        <link rel="shortcut icon" href="~/favicon.ico" />
+        <link rel="apple-touch-icon" href="~/apple-touch-icon.png" />
+
+        @* Facebook Open Graph *@
+		<meta property="og:title" content="" />
+		<meta property="og:description" content="" />
+		<meta property="og:image" content="" />
+		<meta property="og:url" content="" />
+		<meta property="og:site_name" content="" />
+		<meta property="og:type" content="website" />
+
+	    @* Twitter Card *@
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="" />
+		<meta name="twitter:description" content="" />
+		<meta name="twitter:image" content="" />
+		<meta name="twitter:domain" content="" />
+        
+        @* Global CSS *@
+        @Styles.Render("~/Content/css/site.css")
+         @Styles.Render("~/Content/css/template.css")
+
+        @* Local CSS *@
+        @Styles.Render("~/Content/css/easy-responsive-tabs.css")
+        
+        @* Preloaded JS *@
+        @Scripts.Render("~/Scripts/libs/modernizr/modernizr-2.7.1.min.js")
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            window.jQuery || document.write('<script src="/Scripts/libs/jquery/jquery-1.11.0.min.js"><\/script>');
+            
+            /* Universal Analytics */
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-XXXXXX-X', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+    <body class="">
+        <div id="container">
+            <header id="site-header" role="banner">
+				<div class="row">
+					<div class="col">
+						<h1 id="site-title"><a href="/"><img src="~/Content/images/lafayette-testing-services-logo.gif" alt="Lafayette Testing Services" /><span>Lafayette Testing Services</span></a></h1>
+					</div>
+				</div>
+
+				<nav id="site-nav" class="collapsed row" role="navigation">
+					<h2 class="assistive-text">Main navigation</h2>
+					<a href="#content" class="skip-link assistive-text">Skip to content</a>
+					<ul class="nav group">
+						<li class="nav-item" id="nav-item-home">@Html.ActionLink("Home", "Index", "Home")</li>
+						<li class="nav-item" id="nav-item-2">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nondestructive Testing Services<span class="arrow arrow-down"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="~/services/ultrasonics">Ultrasonics</a></li>
+								<li><a href="~/services/liquid-penetrant">Liquid Penetrant</a></li>
+								<li><a href="~/services/magnetic-particle">Magnetic Particle</a></li>
+                                <li><a href="~/services/energy-x-ray">Energy X-Ray</a></li>
+                                <li><a href="~/services/digital-radiography">Digital Radiography</a></li>
+                                 <li><a href="~/services/radiography">Radiography</a></li>
+							</ul>
+						</li>
+                        <li class="nav-item" id="nav-item-3">@Html.ActionLink("CNC Precision Machining", "cnc-precision-machining", "services")</li>
+						<li class="nav-item" id="nav-item-4">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Complimentary Services<span class="arrow arrow-down"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="~/services/complimentary-services">Welding</a></li>
+								<li><a href="~/services/complimentary-services">Mechanical Polishing</a></li>
+								<li><a href="~/services/complimentary-services">Parts Washing</a></li>
+                                <li><a href="~/services/complimentary-services">Sandblasting</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="utility hide-for-sm">
+					<div class="row">
+						<nav>
+							<ul class="inline-nav">
+								<li>@Html.ActionLink("Contact Us", "contact-us", "Home")</li>
+								<li>@Html.ActionLink("About Us", "about-us", "Home")</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+            </header>
+            <main id="content" role="main">
+
+<!--
+@RenderSection("featured", required: false) 
+@RenderBody()
+-->
+            </main>
+            <footer class="vcard" id="site-footer" role="contentinfo">
+				<div class="row">
+					<div class="col md-6 last">
+						<nav class="utility">
+							<ul class="inline-nav">
+								<li>@Html.ActionLink("Usage Agreement", "usage-agreement", "Home")</li>
+								<li>@Html.ActionLink("Privacy Statement", "privacy-statement", "Home")</li>
+								<li>@Html.ActionLink("Site Map", "site-map", "Home")</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col md-6">
+			            <img src="~/Content/images/usa-flag.gif" id="footerFlag" alt="Made in USA" /> <small class="copyright">&copy; @DateTime.Now.Year  <address class="author"><span class="fn org">Lafayette Testing Services</span></address>. All rights reserved.</small>
+                        <span class="adr">
+                            <span class="street-address">3710 North Richards Street</span>
+                            <span class="pipe">&#8729;</span>
+                            <span class="locality">Milwaukee</span>, <span class="region">WI</span> <span class="postal-code">53212</span>
+                            <span class="pipe">&#8729;</span> <span class="tel"><span class="type">Main</span>: 1-800-337-4884</span><span class="pipe">&#8729;</span><span class="tel"><span class="type">Fax</span>: 414-332-3652
+                        </span>
+					</div>
+				</div>
+            </footer>
+        </div>
+        @Scripts.Render("~/Scripts/plugins/jquery.easyResponsiveTabs/jquery.easyResponsiveTabs.min.js")
+         @Scripts.Render("~/Scripts/site.js") 
+        @RenderSection("scripts", required: false)
+    </body>
+</html>

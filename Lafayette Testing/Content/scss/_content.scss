@@ -1,0 +1,17 @@
+// breadcrumb
+
+.breadcrumb {
+	margin-top: -1em;
+	font-size: .9em;
+	
+	li { display: inline; }
+
+	li + li:before {
+		content: "\003E\00a0";
+		padding: 0 .25em;
+	}
+
+	@media print {
+		display: none;
+	}
+}

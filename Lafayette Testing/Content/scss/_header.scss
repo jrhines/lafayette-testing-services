@@ -1,0 +1,71 @@
+#site-header { padding: 1em 0; }
+
+#site-title {
+	margin: 0;
+	padding: 0;
+	font-size: 122%; 
+	font-weight: bold; 
+	text-transform: uppercase;
+}
+
+#site-title span {
+	position: absolute;
+	top: 25px;
+	margin: 0 0 0 10px;
+	width: 300px;
+	color: #001B51;
+}
+
+.nav {
+	background: rgb(0,27,81); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMWI1MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyMDdjY2EiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(0,27,81,1) 0%, rgba(32,124,202,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,27,81,1)), color-stop(100%,rgba(32,124,202,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,27,81,1) 0%,rgba(32,124,202,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,27,81,1) 0%,rgba(32,124,202,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,27,81,1) 0%,rgba(32,124,202,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,27,81,1) 0%,rgba(32,124,202,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001b51', endColorstr='#207cca',GradientType=0 ); /* IE6-8 */
+	text-transform: uppercase;
+	font-weight: bold;
+	border-top: 2px solid #FFF;
+	box-shadow: 0 6px 6px 0 rgba(0,0,0,0.25);
+}
+
+#nav-toggle {
+	padding: 4px 0;
+	margin: 0 10px 0 0;
+
+	.icon-bar {
+		display: block;
+		height: 3px;
+		width: 25px;
+		background-color: #333;
+		margin: 4px 8px;
+		box-shadow: 0 1px 0 rgba(0,0,0,.15);
+	}
+
+	@media print {
+		display: none;
+	}
+}
+
+#flyout-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 258px;
+}
+
+@media only screen and (min-width: 768px) {
+
+	#site-nav { display: block !important; }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+	#site-nav.collapsed { display: none; }
+	
+}

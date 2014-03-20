@@ -1,0 +1,21 @@
+@page { margin: 1cm; }
+
+* {
+	background: transparent !important;
+	color: #000 !important;
+	text-shadow: none !important;
+}
+
+nav,
+form { display: none !important; }
+
+.print { display: inherit !important; }
+
+a {
+	color: #00e !important;
+	text-decoration: underline;
+}
+
+pre,
+blockquote,
+img { page-break-inside: avoid; }

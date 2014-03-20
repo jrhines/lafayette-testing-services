@@ -1,0 +1,225 @@
+body {
+	font: 400 14px/1.6 'Helvetica Neue', sans-serif;
+	color: #555;
+	margin: 0;
+}
+
+a {
+	color: $linkColor;
+
+	&:hover { color: $linkColorHover; }
+}
+
+#container {
+	position: relative;
+	z-index: 9;
+	margin: 0 auto;
+	-webkit-transition: -webkit-transform .3s;
+	transition: transform .3s;
+}
+
+.show-nav #container {
+	-webkit-transform: translateX(258px);
+	transform: translateX(258px);
+
+	@media only screen and (min-width: 768px) {
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+
+	html,
+	body { overflow-x: hidden; }
+
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.btn {
+	display: inline-block;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	padding: .5em 1.5em;
+	text-align: center;
+	cursor: pointer;
+	font-size: inherit;
+	text-decoration: none;
+
+	&:hover {
+		background-color: #eee;
+		border-color: #bbb;
+	}
+}
+
+.btn-lg { padding: 1em 2em; }
+
+/* ==========================================================================
+   Icons
+   ========================================================================== */
+
+.arrow {
+	position: relative;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-color: transparent;
+	margin-left: 5px;
+}
+
+.arrow-up {
+	border-width: 0 4px 6px;
+	border-bottom-color: #333;
+}
+
+a .arrow-up { border-bottom-color: $linkColor; }
+
+a:hover .arrow-up { border-bottom-color: $linkColorHover; }
+
+.arrow-right {
+	border-width: 4px 0 4px 6px;
+	border-left-color: #333;
+}
+
+a .arrow-right { border-left-color: $linkColor; }
+
+a:hover .arrow-right { border-left-color: $linkColorHover; }
+
+.arrow-down {
+	top: -1px;
+	border-width: 6px 4px 0;
+	border-top-color: #333;
+}
+
+a .arrow-down { border-top-color: $linkColor; }
+
+a:hover .arrow-down { border-top-color: $linkColorHover; }
+
+.arrow-left {
+	border-width: 4px 6px 4px 0;
+	border-right-color: #333;
+	margin-left: 0;
+	margin-right: 5px;
+}
+
+a .arrow-left { border-right-color: $linkColor; }
+
+a:hover .arrow-left { border-right-color: $linkColorHover; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+label,
+input[type="submit"],
+button { cursor: pointer; }
+
+.error,
+.required {
+	color: #c00;
+	font-weight: 700;
+}
+
+fieldset {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+fieldset > div,
+fieldset.option-group { 
+	margin-bottom: 1em;
+	clear: both;
+}
+
+fieldset.option-group > div { margin-bottom: 0; }
+
+.field label:after {
+	content: '';
+	display: block;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+	border: 1px solid #ccc;
+	font-size: inherit;
+	width: 100%;
+	padding: .5em;
+	height: 2.3125em;
+}
+
+select[multiple] { height: auto; }
+
+textarea { min-height: 4em; }
+
+input.error,
+textarea.error,
+select.error {
+	color: inherit;
+	border-color: #c00;
+}
+
+button:focus,
+input:focus,
+textarea:focus,
+select:focus { outline: none; }
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+textarea:focus,
+select:focus {
+	border-color: #bbb;
+	box-shadow: 0 0 1px rgba(0,0,0,.5);
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+.table-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    table-layout: fixed;
+    width: 100%;
+    word-wrap: break-word;
+
+    table { min-width: 600px; }
+}
+
+table { width: 100%; }
+
+th,
+td { padding: .5em; }
+
+th {
+	text-align: left;
+	vertical-align: bottom;
+}
