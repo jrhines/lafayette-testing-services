@@ -16,6 +16,11 @@
 	color: #001B51;
 }
 
+#site-nav {
+	padding: 48px 0 0 0;
+	background: transparent url(/Content/images/header-curve.png) no-repeat top left;
+}
+
 .nav {
 	background: rgb(0,27,81); /* Old browsers */
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -29,7 +34,7 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001b51', endColorstr='#207cca',GradientType=0 ); /* IE6-8 */
 	text-transform: uppercase;
 	font-weight: bold;
-	border-top: 2px solid #FFF;
+	border-top: 1px solid #FFF;
 	box-shadow: 0 6px 6px 0 rgba(0,0,0,0.25);
 }
 

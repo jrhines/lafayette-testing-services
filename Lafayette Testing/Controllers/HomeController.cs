@@ -28,5 +28,26 @@ namespace Lafayette_Testing.Controllers
 
 			return View();
 		}
+
+		public ActionResult SiteMap()
+		{
+			ViewBag.Message = "Your site map page.";
+
+			return View();
+		}
+
+		public ActionResult PrivacyStatement()
+		{
+			ViewBag.Message = "Your privacy statement page.";
+
+			return View();
+		}
+
+		public ActionResult UsageAgreement()
+		{
+			ViewBag.Message = "Your usage agreement page.";
+
+			return View();
+		}
 	}
 }

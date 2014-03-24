@@ -82,12 +82,12 @@ $(function () {
 	});
 	
 	// slider
-	$('.slider').flexslider({
-		animation: 'slide',
-		useCSS: false,
-		multipleKeyboard: false,
-		directionNav: false
-	});
+	//$('.slider').flexslider({
+		//animation: 'slide',
+		//useCSS: false,
+		//multipleKeyboard: false,
+		//directionNav: false
+	//});
 
 	// tabs
 	$('.tabs-horizontal').easyResponsiveTabs({
@@ -110,14 +110,14 @@ $(function () {
 	});
 
 	// fancybox video
-	if (isMobile) {
-		$('.fancybox-video').on('click tap', function () { return window.open($(this).attr('href')), !1 });
-	} else {
-		$('.fancybox-video').attr('href', function () { return 'http://www.youtube.com/embed/' + youtube_parser($(this).attr('href')) + '?wmode=transparent&rel=0&autoplay=1'; }).fancybox({
-			padding: 0,
-			type: 'iframe',
-			aspectRatio: true
-		});
-	}
+	//if (isMobile) {
+		//$('.fancybox-video').on('click tap', function () { return window.open($(this).attr('href')), !1 });
+	//} else {
+		//$('.fancybox-video').attr('href', function () { return 'http://www.youtube.com/embed/' + youtube_parser($(this).attr('href')) + '?wmode=transparent&rel=0&autoplay=1'; }).fancybox({
+			//padding: 0,
+			//type: 'iframe',
+			//aspectRatio: true
+		//});
+	//}
 
 });
