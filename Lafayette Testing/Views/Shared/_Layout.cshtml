@@ -113,9 +113,9 @@
 @RenderBody()
 -->
             </main>
-            <footer class="vcard" id="site-footer" role="contentinfo">
+            <footer id="site-footer" role="contentinfo">
 				<div class="row">
-					<div class="col md-6 last">
+					<div class="col md-4 last">
 						<nav class="utility">
 							<ul class="inline-nav">
 								<li>@Html.ActionLink("Usage Agreement", "usage-agreement", "Home")</li>
@@ -124,13 +124,11 @@
 							</ul>
 						</nav>
 					</div>
-					<div class="col md-6">
-			            <img src="~/Content/images/usa-flag.gif" id="footerFlag" alt="Made in USA" /> <small class="copyright">&copy; @DateTime.Now.Year  <address class="author"><span class="fn org">Lafayette Testing Services</span></address>. All rights reserved.</small>
-                        <span class="adr">
-                            <span class="street-address">3710 North Richards Street</span>
-                            <span class="pipe">&#8729;</span>
-                            <span class="locality">Milwaukee</span>, <span class="region">WI</span> <span class="postal-code">53212</span>
-                            <span class="pipe">&#8729;</span> <span class="tel"><span class="type">Main</span>: 1-800-337-4884</span><span class="pipe">&#8729;</span><span class="tel"><span class="type">Fax</span>: 414-332-3652
+					<div class="col md-8" itemscope itemtype="http://schema.org/LocalBusiness">
+			            <img src="~/Content/images/usa-flag.gif" id="footerFlag" alt="Made in USA" title="Made in USA" /> &#169; @DateTime.Now.Year  <span itemprop="name">Lafayette Testing Services</span>. All rights reserved.
+                        <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><br />
+                            <span itemprop="streetAddress">3710 North Richards Street</span> <span itemprop="addressLocality">Milwaukee</span>, <span itemprop="addressRegion">WI</span> <span itemprop="postalCode">53212</span><br />
+							Main: <span class="tel" itemprop="telephone">1-800-337-4884</span> <span class="pipe">&#8729;</span> Fax: <span itemprop="faxNumber">414-332-3652</span>
                         </span>
 					</div>
 				</div>
