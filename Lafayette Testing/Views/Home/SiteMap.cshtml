@@ -1,5 +1,6 @@
 ﻿@{
     ViewBag.Title = "Site Map";
+	ViewBag.BodyClass = "site-map";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -16,8 +17,8 @@
 				</ul>
 			</li>
 			<li>@Html.ActionLink("Contact Us", "contact", "Home")</li>
-			<li><a href="">Usage Agreement</a></li>
-			<li><a href="">Privacy Statement</a></li>
+			<li>@Html.ActionLink("Usage Agreement", "usage-agreement", "Home")</li>
+			<li>@Html.ActionLink("Privacy Statement", "privacy-statement", "Home")</li>
 		</ul>
 	</div>
 	<div class="section-content col md-4">

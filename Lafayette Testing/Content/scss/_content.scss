@@ -15,3 +15,26 @@
 		display: none;
 	}
 }
+
+// home
+
+#primary,
+#secondary,
+#tertiary {
+	height: 700px;
+	padding-top: 2em;
+}
+
+#primary {
+	background-color: #AFAFAF;
+}
+
+#secondary,
+#tertiary {
+	background-color: #E3E2E2;
+}
+
+#secondary {
+	border: solid 1px #FFF;
+	border-width: 0 1px;
+}

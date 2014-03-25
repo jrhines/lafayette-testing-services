@@ -83,4 +83,3 @@ C:\WebsitesLC\Lafayette Testing\Lafayette Testing\bin\zh-Hant\System.Spatial.res
 C:\WebsitesLC\Lafayette Testing\Lafayette Testing\obj\Debug\Lafayette Testing.csprojResolveAssemblyReference.cache
 C:\WebsitesLC\Lafayette Testing\Lafayette Testing\obj\Debug\Lafayette Testing.dll
 C:\WebsitesLC\Lafayette Testing\Lafayette Testing\obj\Debug\Lafayette Testing.pdb
-C:\WebsitesLC\Lafayette Testing\Lafayette Testing\bin\LowercaseDashedRouting.dll

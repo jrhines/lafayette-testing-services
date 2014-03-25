@@ -208,7 +208,7 @@ table {
 
 #site-footer > .row:first-child {
 	padding-top: 1em;
-	border-top: 1px solid #ccc;
+	border-top: 1px solid #001B51;
 }
 
 #site-footer .col.last { text-align: right; }
@@ -232,12 +232,8 @@ table {
    Content
    ========================================================================== */
 
-#content { padding: 1em 0; }
-
-.section {
-	padding-top: 1em;
-	padding-bottom: 1em;
-}
+#content,
+.section { padding: 0; }
 
 .slider {
 	position: relative;

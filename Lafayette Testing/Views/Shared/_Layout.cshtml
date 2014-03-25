@@ -57,7 +57,7 @@
             ga('send', 'pageview');
         </script>
     </head>
-    <body class="">
+    <body class="@ViewBag.BodyClass">
         <div id="container">
             <header id="site-header" role="banner">
 				<div class="row">
@@ -115,9 +115,9 @@
 					<div class="col md-4 last">
 						<nav class="utility">
 							<ul class="inline-nav">
-								<li>@Html.ActionLink("Usage Agreement", "usageagreement", "Home")</li>
-								<li>@Html.ActionLink("Privacy Statement", "privacystatement", "Home")</li>
-								<li>@Html.ActionLink("Site Map", "sitemap", "Home")</li>
+								<li>@Html.ActionLink("Usage Agreement", "usage-agreement", "Home")</li>
+								<li>@Html.ActionLink("Privacy Statement", "privacy-statement", "Home")</li>
+								<li>@Html.ActionLink("Site Map", "site-map", "Home")</li>
 							</ul>
 						</nav>
 					</div>

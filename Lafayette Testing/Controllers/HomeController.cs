@@ -29,25 +29,23 @@ namespace Lafayette_Testing.Controllers
 			return View();
 		}
 
-		public ActionResult SiteMap()
+		[ActionName("site-map")]
+		public ActionResult DataLoggers(string cleanUrlName)
 		{
-			ViewBag.Message = "Your site map page.";
-
-			return View();
+			return View("SiteMap");
 		}
 
-		public ActionResult PrivacyStatement()
+		[ActionName("privacy-statement")]
+		public ActionResult DataLoggers1(string cleanUrlName)
 		{
-			ViewBag.Message = "Your privacy statement page.";
-
-			return View();
+			return View("PrivacyStatement");
 		}
 
-		public ActionResult UsageAgreement()
+		[ActionName("usage-agreement")]
+		public ActionResult DataLoggers2(string cleanUrlName)
 		{
-			ViewBag.Message = "Your usage agreement page.";
-
-			return View();
+			return View("UsageAgreement");
 		}
+
 	}
 }
