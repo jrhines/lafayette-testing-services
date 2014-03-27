@@ -120,4 +120,18 @@ $(function () {
 		//});
 	//}
 
+	// home page text fading
+	var i = 0;
+	function iteratelist() {
+		var list = $("ul.fade li");
+		list.eq(i).delay(1000).fadeIn(2000).fadeOut(2000, function () {
+			i++;
+			if (i % list.length == 0) {
+				i = 0;
+			}
+			iteratelist();
+		});
+	}
+	iteratelist();
+
 });

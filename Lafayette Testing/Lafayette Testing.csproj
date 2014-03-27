@@ -284,7 +284,34 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
+    <Content Include="Scripts\libs\jquery\jquery-1.11.0.js" />
+    <Content Include="Scripts\libs\jquery\jquery-1.11.0.min.js" />
+    <Content Include="Scripts\libs\jquery\jquery-2.0.3.js" />
+    <Content Include="Scripts\libs\jquery\jquery-2.0.3.min.js" />
+    <Content Include="Scripts\libs\modernizr\modernizr-2.7.1.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\plugins\jquery.easyResponsiveTabs\jquery.easyResponsiveTabs.min.js" />
+    <Content Include="Scripts\plugins\jquery.fancybox-2.1.5\blank.gif" />
+    <Content Include="Scripts\plugins\jquery.fancybox-2.1.5\fancybox_loading%402x.gif" />
+    <Content Include="Scripts\plugins\jquery.fancybox-2.1.5\fancybox_loading.gif" />
+    <Content Include="Scripts\plugins\jquery.fancybox-2.1.5\fancybox_overlay.png" />
+    <Content Include="Scripts\plugins\jquery.fancybox-2.1.5\fancybox_sprite%402x.png" />
+    <Content Include="Scripts\plugins\jquery.fancybox-2.1.5\fancybox_sprite.png" />
+    <Content Include="Scripts\plugins\jquery.fancybox-2.1.5\helpers\fancybox_buttons.png" />
+    <Content Include="Scripts\plugins\jquery.fancybox-2.1.5\helpers\jquery.fancybox-buttons.css" />
+    <Content Include="Scripts\plugins\jquery.fancybox-2.1.5\helpers\jquery.fancybox-buttons.js" />
+    <Content Include="Scripts\plugins\jquery.fancybox-2.1.5\helpers\jquery.fancybox-media.js" />
+    <Content Include="Scripts\plugins\jquery.fancybox-2.1.5\helpers\jquery.fancybox-thumbs.css" />
+    <Content Include="Scripts\plugins\jquery.fancybox-2.1.5\helpers\jquery.fancybox-thumbs.js" />
+    <Content Include="Scripts\plugins\jquery.fancybox-2.1.5\jquery.fancybox.css" />
+    <Content Include="Scripts\plugins\jquery.fancybox-2.1.5\jquery.fancybox.js" />
+    <Content Include="Scripts\plugins\jquery.fancybox-2.1.5\jquery.fancybox.pack.js" />
+    <Content Include="Scripts\plugins\jquery.flexslider-2.2.0\jquery.flexslider-min.js" />
+    <Content Include="Scripts\plugins\jquery.flexslider-2.2.0\jquery.flexslider.js" />
+    <Content Include="Scripts\plugins\jquery.flexslider-2.2.0\jquery.flexslider.min.js" />
+    <Content Include="Scripts\plugins\jquery.hoverIntent-r7\jquery.hoverIntent.min.js" />
+    <Content Include="Scripts\plugins\jquery.mediaCheck-0.2.2\mediaCheck-min.js" />
+    <Content Include="Scripts\plugins\jquery.mediaCheck-0.2.2\mediaCheck.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -326,6 +353,8 @@
     <Content Include="Views\Home\SiteMap.cshtml" />
     <Content Include="Views\Home\PrivacyStatement.cshtml" />
     <Content Include="Views\Home\UsageAgreement.cshtml" />
+    <Content Include="Scripts\libs\jquery\jquery-1.11.0.min.map" />
+    <Content Include="Scripts\libs\jquery\jquery-2.0.3.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

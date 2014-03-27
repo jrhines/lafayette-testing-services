@@ -43,19 +43,24 @@
 		}
 
 		.line-2 {
-			padding: 0 0 0 40px;
 			display: block;
+			width: 260px;
+			padding: 0 0 8px 40px;
 			font-size: 18px;
+			border: solid 1px #FFF;
+			border-width: 0 1px 0 0;
 		}
 
 		.line-3 {
 			position: relative;
 			top: -20px;
-			margin: 0 0 0 260px;
+			margin: -6px 0 0 260px;
 			padding: 0 0 0 .4em;
 			font-size: 30px;
-			border: solid 1px #FFF;
-			border-width: 0 0 0 1px;
+
+			li {
+				display: none;
+			}
 		}
 	}
 }
