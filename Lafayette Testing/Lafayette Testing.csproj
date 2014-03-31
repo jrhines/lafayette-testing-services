@@ -312,6 +312,7 @@
     <Content Include="Scripts\plugins\jquery.hoverIntent-r7\jquery.hoverIntent.min.js" />
     <Content Include="Scripts\plugins\jquery.mediaCheck-0.2.2\mediaCheck-min.js" />
     <Content Include="Scripts\plugins\jquery.mediaCheck-0.2.2\mediaCheck.js" />
+    <Content Include="Scripts\site.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

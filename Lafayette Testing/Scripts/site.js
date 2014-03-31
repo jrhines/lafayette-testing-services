@@ -134,4 +134,55 @@ $(function () {
 	}
 	iteratelist();
 
+	// home page random image and text
+	(function ($) {
+
+		$.randomImage = {
+			defaults: {
+
+				path: "/Content/images/",
+				myImages: [{
+					src: "liquid-penetrant-test.png",
+					title: "Penetrant Inspection Linear Indications"
+				},
+				{
+					src: "wet-fluorescent-magnetic-test.png",
+					title: "Wet Fluorescent Magnetic Particle Inspection Linear Indication"
+				},
+				{
+					src: "dry-powder-test.png",
+					title: "Dry Powder Magnetic Particle Linear Indication"
+				},
+				{
+					src: "digital-x-ray-test.png",
+					title: "Digital X-Ray Cavity Shrink Indication"
+				}
+				]
+			}
+		}
+
+		$.fn.extend({
+			randomImage: function (config) {
+				var config = $.extend({}, $.randomImage.defaults, config);
+
+				return this.each(function () {
+					var imageNames = config.myImages;
+					var imageNamesSize = imageNames.length;
+					var lotteryNumber = Math.floor(Math.random() * imageNamesSize);
+					var winnerImage = imageNames[lotteryNumber].src;
+					this.title = config.myImages[lotteryNumber].title;
+					$(this).after("<small id='random-caption'>" + this.title + "</small>");
+					var fullPath = config.path + winnerImage;
+
+					$(this).attr({
+						src: fullPath,
+						alt: this.title
+					});
+				});
+			}
+		});
+	})(jQuery);
+
+	$("#random-banner").randomImage();
+
 });
