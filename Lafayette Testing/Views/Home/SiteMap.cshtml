@@ -5,39 +5,41 @@
 }
 
 <section class="section row">
-	<header class="section-header col">
-		<h1 class="section-title">@ViewBag.Title</h1>
-	</header>
-	<div class="section-content col md-4">
-		<ul>
-			<li>@Html.ActionLink("Home", "Index", "Home")</li>
-			<li>@Html.ActionLink("About Us", "about", "Home")
-				<ul>
-					<li><a href="">LTS Laboratory Diversification Program</a></li>
-				</ul>
-			</li>
-			<li>@Html.ActionLink("Contact Us", "contact", "Home")</li>
-			<li>@Html.ActionLink("Usage Agreement", "usage-agreement", "Home")</li>
-			<li>@Html.ActionLink("Privacy Statement", "privacy-statement", "Home")</li>
-		</ul>
-	</div>
-	<div class="section-content col md-4">
-		<ul>
-			<li><a href="">Radiography</a></li>
-			<li><a href="">Digital Radiography</a></li>
-			<li><a href="">High Energy X-Ray</a></li>
-			<li><a href="">Magnetic Particle</a></li>
-			<li><a href="">Liquid Penetrant</a></li>
-			<li><a href="">Ultrasonics</a></li>
-		</ul>
-	</div>
-	<div class="section-content col md-4">
-		<ul>
-			<li><a href="">CNC Precision Machining</a></li>
-			<li><a href="">Sandblasting</a></li>
-			<li><a href="">Parts Washing</a></li>
-			<li><a href="">Mechanical Polishing</a></li>
-			<li><a href="">Welding</a></li>
-		</ul>
+	<div id="primary">
+		<header class="section-header col">
+			<h1 class="section-title">@ViewBag.Title</h1>
+		</header>
+		<div class="section-content col md-4">
+			<ul>
+				<li>@Html.ActionLink("Home", "Index", "Home")</li>
+				<li>@Html.ActionLink("About Us", "about", "Home")
+					<ul>
+						<li><a href="">LTS Laboratory Diversification Program</a></li>
+					</ul>
+				</li>
+				<li>@Html.ActionLink("Contact Us", "contact", "Home")</li>
+				<li>@Html.ActionLink("Usage Agreement", "usage-agreement", "Home")</li>
+				<li>@Html.ActionLink("Privacy Statement", "privacy-statement", "Home")</li>
+			</ul>
+		</div>
+		<div class="section-content col md-4">
+			<ul>
+				<li><a href="">Radiography</a></li>
+				<li><a href="">Digital Radiography</a></li>
+				<li><a href="">High Energy X-Ray</a></li>
+				<li><a href="">Magnetic Particle</a></li>
+				<li><a href="">Liquid Penetrant</a></li>
+				<li><a href="">Ultrasonics</a></li>
+			</ul>
+		</div>
+		<div class="section-content col md-4">
+			<ul>
+				<li><a href="">CNC Precision Machining</a></li>
+				<li><a href="">Sandblasting</a></li>
+				<li><a href="">Parts Washing</a></li>
+				<li><a href="">Mechanical Polishing</a></li>
+				<li><a href="">Welding</a></li>
+			</ul>
+		</div>
 	</div>
 </section>

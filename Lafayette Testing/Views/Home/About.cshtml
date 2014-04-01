@@ -3,33 +3,44 @@
 	ViewBag.BodyClass = "about";
 }
 
-<hgroup class="title">
-    <h1>@ViewBag.Title.</h1>
-    <h2>@ViewBag.Message</h2>
-</hgroup>
-
-<article>
-    <p>
-        Use this area to provide additional information.
-    </p>
-
-    <p>
-        Use this area to provide additional information.
-    </p>
-
-    <p>
-        Use this area to provide additional information.
-    </p>
-</article>
-
-<aside>
-    <h3>Aside Title</h3>
-    <p>
-        Use this area to provide additional information.
-    </p>
-    <ul>
-        <li>@Html.ActionLink("Home", "Index", "Home")</li>
-        <li>@Html.ActionLink("About", "About", "Home")</li>
-        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-    </ul>
-</aside>
+<section class="section row">
+	<div id="primary">
+		<header class="section-header col">
+			<h1 class="section-title">About Lafayette Testing Services, Inc. (LTS)</h1>
+		</header>
+		<div class="section-content col lg-9">
+			<div class="tabs-horizontal">
+				<ul class="resp-tabs-list">
+					<li>Overview</li>
+					<li>Lab Diversification</li>
+					<li>Image Gallery</li>
+				</ul> 
+				<div class="resp-tabs-container">                                                        
+					<div>
+						<p><strong>Lafayette Testing Services, Inc. (LTS)</strong> was established to meet the increasing need that the industrial community has for high quality Nondestructive Testing and CNC Precision Machining services at competitive prices.</p>
+						<aside id="lts-leadership">
+							<img src="~/Content/images/lafayette-testing-services-leadership.jpg" alt="Lafayette Testing Services Leadership" />
+							<small class="caption"><strong>LTS Leadership:</strong> Terry DiLorenzo: President, Willie Truitt: Vice President Sales/Marketing, Jeff Jerome: Laboratory Manager, and Kirven Zerbe: Vice President/Director of Operations</small>
+						</aside>
+						<p>Since our beginning in 1992, LTS has experienced substantial growth. The success of our company is a result of our operating philosophy. We put the customer first by considering <strong>Time, Cost, Quality and Customer Service.</strong></p>
+						<p>We understand that <strong>Time</strong> is very valuable in today&#8217;s competitive market. We are constantly looking for ways to improve inspections and refine current procedures without compromising quality. Unexpected failures can result in <strong>Costly</strong> repairs, downtime, and injury due to consequential damages. Our technical services can reduce the risk of such occurrences. We also understand that <strong>Quality</strong> is necessary because of the performance expectations of our customers. Therefore, we deliver the highest quality service and assure reliability. We feel that our name must represent quality to our customers and to ourselves.</p>
+						<p>Lafayette Testing Service&#8217;s continued success depends upon complete customer satisfaction. Customer Service is a top priority and we strive to insure quality service in a timely manner at a competitive rate. At LTS we set our goals to achieve total customer satisfaction and to deliver outstanding service. <strong class="uppercase">service second to none.</strong></p>
+						<h2 id="professionals">Dedicated Professionals&#8230; The LTS advantage</h2>
+						<p>When LTS handles your Nondestructive Testing and CNC Precision Machining, you can rest assured that you are in the hands of dedicated professionals. From start to finish, you will find a valuable partner working with the most updated technology to make sure you get accurate results within the shortest possible time frame.</p>
+					</div>
+					<div>
+						<h3>Advantages</h3>
+						where
+					</div>
+					<div>
+						<h3>Applications</h3>
+						what
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section-content col lg-3">
+			left rail
+		</div>
+	</div>
+</section>

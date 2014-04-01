@@ -33,9 +33,6 @@ $.fn.scrollTo = function(target, options, callback){
 
 $(function () {
 
-	// trigger external links
-	$('a[rel="external"]').on('click tap',function(){return window.open($(this).attr('href')),!1});
-
 	// disable tel links on non-touch devices
 	$('.no-touch a[href^="tel:"]').on('click tap', function (e) {
 		e.preventDefault();
