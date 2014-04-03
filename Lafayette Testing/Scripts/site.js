@@ -106,6 +106,12 @@ $(function () {
 		$(this).parent().find('label').append(' <span class="required">*</span>');
 	});
 
+	// fancybox modal
+	$(".fancybox").fancybox({
+		openEffect: 'none',
+		closeEffect: 'none'
+	});
+
 	// fancybox video
 	//if (isMobile) {
 		//$('.fancybox-video').on('click tap', function () { return window.open($(this).attr('href')), !1 });

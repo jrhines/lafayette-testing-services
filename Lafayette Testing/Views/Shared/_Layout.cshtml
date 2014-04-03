@@ -38,6 +38,7 @@
 
         @* Local CSS *@
         @Styles.Render("~/Content/css/easy-responsive-tabs.css")
+		@Styles.Render("~/Scripts/plugins/jquery.fancybox-2.1.5/jquery.fancybox.css")
         
         @* Preloaded JS *@
         @Scripts.Render("~/Scripts/libs/modernizr/modernizr-2.7.1.min.js")
@@ -132,6 +133,7 @@
             </footer>
         </div>
         @Scripts.Render("~/Scripts/plugins/jquery.easyResponsiveTabs/jquery.easyResponsiveTabs.min.js")
+		@Scripts.Render("~/Scripts/plugins/jquery.fancybox-2.1.5/jquery.fancybox.pack.js")
 		@Scripts.Render("~/Scripts/site.js")
         @RenderSection("scripts", required: false)
     </body>
