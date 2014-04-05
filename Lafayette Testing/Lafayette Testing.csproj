@@ -183,13 +183,13 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\Services\ServicesController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="apple-touch-icon.png" />
@@ -403,6 +403,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\images\ultrasonics-testing\images\" />
+    <Folder Include="Content\images\ultrasonics-testing\thumbnails\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
