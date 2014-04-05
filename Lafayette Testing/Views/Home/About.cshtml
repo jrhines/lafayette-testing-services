@@ -1,14 +1,22 @@
 ﻿@{
-    ViewBag.Title = "About";
+    ViewBag.Title = "About Us";
+	ViewBag.Description = "";
 	ViewBag.BodyClass = "about";
 }
 
 <section class="section row">
 	<div id="primary">
+		<nav class="breadcrumb col lg-12" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="">
+			<h1 class="assistive-text">Breadcrumb navigation</h1>
+			<ol>
+				<li><a itemprop="url" href="/"><span itemprop="title">Home</span></a></li>
+				<li><span itemprop="title">@ViewBag.Title</span></li>
+			</ol>
+		</nav>
+		<header class="section-header col">
+			<h1 class="section-title">About Lafayette Testing Services, Inc. (LTS)</h1>
+		</header>
 		<div class="section-content col lg-10">
-			<header class="section-header col">
-				<h1 class="section-title">About Lafayette Testing Services, Inc. (LTS)</h1>
-			</header>
 			<div class="tabs-horizontal">
 				<ul class="resp-tabs-list">
 					<li>Overview</li>

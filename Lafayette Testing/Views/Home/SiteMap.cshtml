@@ -1,29 +1,34 @@
 ﻿@{
     ViewBag.Title = "Site Map";
+	ViewBag.Description = "";
 	ViewBag.BodyClass = "site-map";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <section class="section row">
 	<div id="primary">
+		<nav class="breadcrumb col lg-12" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="">
+			<h1 class="assistive-text">Breadcrumb navigation</h1>
+			<ol>
+				<li><a itemprop="url" href="/"><span itemprop="title">Home</span></a></li>
+				<li><span itemprop="title">@ViewBag.Title</span></li>
+			</ol>
+		</nav>
 		<header class="section-header col">
 			<h1 class="section-title">@ViewBag.Title</h1>
 		</header>
-		<div class="section-content col md-4">
+		<div class="section-content col lg-4">
 			<ul>
 				<li>@Html.ActionLink("Home", "Index", "Home")</li>
-				<li>@Html.ActionLink("About Us", "about", "Home")
-					<ul>
-						<li><a href="">LTS Laboratory Diversification Program</a></li>
-					</ul>
-				</li>
+				<li>@Html.ActionLink("About Us", "about", "Home")</li>
 				<li>@Html.ActionLink("Contact Us", "contact", "Home")</li>
 				<li>@Html.ActionLink("Usage Agreement", "usage-agreement", "Home")</li>
 				<li>@Html.ActionLink("Privacy Statement", "privacy-statement", "Home")</li>
 			</ul>
 		</div>
-		<div class="section-content col md-4">
+		<div class="section-content col lg-4">
 			<ul>
+				<li>@Html.ActionLink("Ultrasonics Testing", "ultrasonics-testing", "services")</li>
 				<li><a href="">Radiography</a></li>
 				<li><a href="">Digital Radiography</a></li>
 				<li><a href="">High Energy X-Ray</a></li>
@@ -32,7 +37,7 @@
 				<li><a href="">Ultrasonics</a></li>
 			</ul>
 		</div>
-		<div class="section-content col md-4">
+		<div class="section-content col lg-4">
 			<ul>
 				<li><a href="">CNC Precision Machining</a></li>
 				<li><a href="">Sandblasting</a></li>

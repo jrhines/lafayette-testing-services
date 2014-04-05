@@ -1,14 +1,23 @@
 ﻿@{
     ViewBag.Title = "Contact Us";
+	ViewBag.Description = "";
 	ViewBag.BodyClass = "contact";
 }
 
 <section class="section row">
 	<div id="primary" class="">
+		<nav class="breadcrumb col lg-12" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="">
+			<h1 class="assistive-text">Breadcrumb navigation</h1>
+			<ol>
+				<li><a itemprop="url" href="/"><span itemprop="title">Home</span></a></li>
+				<li><span itemprop="title">@ViewBag.Title</span></li>
+			</ol>
+		</nav>
 		<header class="section-header col">
 			<h1 class="section-title">@ViewBag.Title</h1>
 		</header>
-		<div class="section-content col md-4">
+		<div class="section-content col lg-4">
+
 		</div>
 	</div>
 </section>
