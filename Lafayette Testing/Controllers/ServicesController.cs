@@ -22,5 +22,17 @@ namespace Lafayette_Testing.Views.Services
 			return View("UltrasonicsTesting");
 		}
 
+		[ActionName("liquid-penetrant-testing")]
+		public ActionResult DataLoggers3(string cleanUrlName)
+		{
+			return View("LiquidPenetrantTesting");
+		}
+
+		[ActionName("magnetic-particle-testing")]
+		public ActionResult DataLoggers4(string cleanUrlName)
+		{
+			return View("MagneticParticleTesting");
+		}
+
     }
 }

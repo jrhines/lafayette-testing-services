@@ -400,6 +400,8 @@
     <Content Include="Scripts\libs\jquery\jquery-1.11.0.min.map" />
     <Content Include="Scripts\libs\jquery\jquery-2.0.3.min.map" />
     <Content Include="Views\Services\UltrasonicsTesting.cshtml" />
+    <Content Include="Views\Services\LiquidPenetrantTesting.cshtml" />
+    <Content Include="Views\Services\MagneticParticleTesting.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
