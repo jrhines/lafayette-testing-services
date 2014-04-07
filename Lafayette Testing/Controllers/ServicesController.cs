@@ -17,21 +17,40 @@ namespace Lafayette_Testing.Views.Services
         }
 
 		[ActionName("ultrasonics-testing")]
-		public ActionResult DataLoggers2(string cleanUrlName)
+		public ActionResult DataLoggers(string cleanUrlName)
 		{
 			return View("UltrasonicsTesting");
 		}
 
 		[ActionName("liquid-penetrant-testing")]
-		public ActionResult DataLoggers3(string cleanUrlName)
+		public ActionResult DataLoggers1(string cleanUrlName)
 		{
 			return View("LiquidPenetrantTesting");
 		}
 
 		[ActionName("magnetic-particle-testing")]
-		public ActionResult DataLoggers4(string cleanUrlName)
+		public ActionResult DataLoggers2(string cleanUrlName)
 		{
 			return View("MagneticParticleTesting");
+		}
+
+
+		[ActionName("high-energy-x-ray-testing")]
+		public ActionResult DataLoggers3(string cleanUrlName)
+		{
+			return View("HighEnergyXRayTesting");
+		}
+
+		[ActionName("digital-radiography-testing")]
+		public ActionResult DataLoggers4(string cleanUrlName)
+		{
+			return View("DigitalRadiographyTesting");
+		}
+
+		[ActionName("radiography-testing")]
+		public ActionResult DataLoggers5(string cleanUrlName)
+		{
+			return View("RadiographyTesting");
 		}
 
     }

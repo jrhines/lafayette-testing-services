@@ -402,6 +402,9 @@
     <Content Include="Views\Services\UltrasonicsTesting.cshtml" />
     <Content Include="Views\Services\LiquidPenetrantTesting.cshtml" />
     <Content Include="Views\Services\MagneticParticleTesting.cshtml" />
+    <Content Include="Views\Services\HighEnergyXRayTesting.cshtml" />
+    <Content Include="Views\Services\DigitalRadiographyTesting.cshtml" />
+    <Content Include="Views\Services\RadiographyTesting.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
