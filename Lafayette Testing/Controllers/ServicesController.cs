@@ -53,5 +53,17 @@ namespace Lafayette_Testing.Views.Services
 			return View("RadiographyTesting");
 		}
 
+		[ActionName("cnc-precision-machining")]
+		public ActionResult DataLoggers6(string cleanUrlName)
+		{
+			return View("CNCPrecisionMachining");
+		}
+
+		[ActionName("complimentary-services")]
+		public ActionResult DataLoggers7(string cleanUrlName)
+		{
+			return View("ComplimentaryServices");
+		}
+
     }
 }
