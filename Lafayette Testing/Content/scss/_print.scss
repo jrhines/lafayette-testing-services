@@ -7,9 +7,12 @@
 }
 
 nav,
-form { display: none !important; }
+form,
+.resp-tabs-list,
+.accent { display: none !important; }
 
-.print { display: inherit !important; }
+.print,
+#site-header h2 { display: inherit !important; }
 
 a {
 	color: #00e !important;

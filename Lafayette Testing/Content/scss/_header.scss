@@ -18,6 +18,13 @@
 	color: #001B51;
 }
 
+#site-header h2 { 
+	display: none;
+	position: absolute;
+	top: 1em;
+	right: 0;
+}
+
 #site-nav {
 	padding: 24px 0 0 0;
 	background: transparent url(/Content/images/header-curve.png) no-repeat top left;

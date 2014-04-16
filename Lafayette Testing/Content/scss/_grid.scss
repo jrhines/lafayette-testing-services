@@ -29,17 +29,20 @@
 
 .row .row {
 	margin-right: -10px;
-	margin-left: -10px;
+	margin-left: 0;
 }
 
 .col {
 	position: relative;
 	float: left;
 	width: 100%;
-	padding: 0 10px;
+	padding: 0 10px 0 0;
 }
 
-.col.last { float: right; }
+.col.last { 
+	float: right; 
+	padding: 0; 
+}
 
 .flex-col {
 	position: relative;

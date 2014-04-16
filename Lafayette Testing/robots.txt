@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /page-not-found.php
+Disallow: /error.php
+
+Sitemap: http://lafayettetesting.com/sitemap.xml
+
+# Reference: http://www.google.com/support/webmasters/bin/answer.py?hl=en&answer=156449

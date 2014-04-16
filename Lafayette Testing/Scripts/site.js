@@ -123,6 +123,57 @@ $(function () {
 		//});
 	//}
 
+	// contact form set initial focus on first text input
+	$("#contactForm #firstName").focus();
+
+	// run jquery validate on contact form
+	//jQuery.validator.setDefaults({
+		//debug: true,
+		//success: "valid"
+	//});
+
+	$("#contactForm").validate({
+		errorPlacement: function (error, element) {
+			error.insertAfter(element).addClass('input-validation-msg');
+		},
+		rules: {
+			firstName: "required",
+			lastName: "required",
+			phone: {
+				required: true,
+				phoneUS: true
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			
+		},
+		messages: {
+			firstName: "Please enter your First Name.",
+			lastName: "Please enter your Last Name.",
+			phone: {
+				required: "Please enter a Phone Number.",
+				phoneUS: "Please enter a valid 10-digit Phone Number."
+			},
+			email: "Please enter a valid Email address."
+		},
+		invalidHandler: function (form, validator) {
+			var errors = validator.numberOfInvalids();
+			if (errors) {
+				$("#error-message").show();
+				if (errors === 1) {
+					$("#error-message p").text("Errors in 1 field have occured. Please resolve the issue above.");
+				} else {
+					$("#error-message p").text("Errors in " + errors + " fields have occured. Please resolve the issues above.");
+				}
+			} else {
+				$("#error-message").hide();
+			}
+		}
+	});
+
+
 	// home page text fading
 	var i = 0;
 	function iteratelist() {
