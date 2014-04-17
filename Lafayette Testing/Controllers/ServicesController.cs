@@ -59,10 +59,10 @@ namespace Lafayette_Testing.Views.Services
 			return View("CNCPrecisionMachining");
 		}
 
-		[ActionName("complimentary-services")]
+		[ActionName("value-added-services")]
 		public ActionResult DataLoggers7(string cleanUrlName)
 		{
-			return View("ComplimentaryServices");
+			return View("ValueAddedServices");
 		}
 
     }

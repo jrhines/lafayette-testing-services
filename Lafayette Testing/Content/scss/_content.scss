@@ -1,7 +1,7 @@
 // breadcrumb
 
 .breadcrumb {
-	margin: -1em 0 .5em 0;
+	margin: -1em 0 1em 0;
 	font-size: .8em;
 	
 	li { display: inline; }
@@ -25,11 +25,28 @@
 }
 
 .accent {
-	top: -6em;
+	top: -6.5em;
 	padding: 0;
 	min-height: 900px;
 	background-color: #224998;
 	text-align: right;
+}
+
+.contact .accent {
+	min-height: 1000px;
+}
+
+.cnc-precision-machining .accent {
+	min-height: 1100px;
+}
+
+.value-added-services .accent {
+	min-height: 1300px;
+}
+
+footer {
+	position: relative;
+	top: -6.5em;
 }
 
 // home
@@ -85,7 +102,8 @@
 	#primary,
 	#secondary,
 	#tertiary {
-		height: 750px;
+		height: 760px;
+		padding: 1.5em;
 
 		h1,
 		h2 { text-transform: uppercase; }
@@ -104,6 +122,10 @@
 	#secondary {
 		border: solid 1px #FFF;
 		border-width: 0 1px;
+	}
+
+	footer {
+		top: 0;
 	}
 }
 
@@ -143,4 +165,11 @@
 
 .contact form {
 	margin: 3em 0 0 0;
+}
+
+.contact footer,
+.site-map footer,
+.usage-agreement footer,
+.privacy-statement footer {
+	top: 0;
 }
