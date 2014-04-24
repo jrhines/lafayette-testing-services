@@ -75,22 +75,23 @@ table {
 		.arrow-down { border-top-color: #ccc; }
 
 		&:hover {
-			color: #fff;
+			color: #FFF;
 
-			.arrow-down { border-top-color: #fff; }
+			.arrow-down { border-top-color: #FFF; }
 		}
 	}
 
 	.nav-item.active .dropdown-menu {
 		left: 0;
 		display: block !important;
+
 	}
 
 	.nav-item.active > a {
 		background-color: #2C60C6;
-		color: #fff;
+		color: #FFF;
 
-		.arrow-down { border-top-color: #fff; }
+		.arrow-down { border-top-color: #FFF; }
 	}
 
 	@media only screen and (min-width: 768px) {
@@ -102,12 +103,16 @@ table {
 	}
 }
 
+.ie8 .nav li {
+	display: inline-block;
+}
+
 .dropdown-menu {
 	position: absolute;
 	top: 36px;
 	left: -999em;
 	z-index: 99;
-	background-color: #fff;
+	background-color: #FFF;
 	min-width: 200px;
 	width: 100%;
 	border: 1px solid #999;
