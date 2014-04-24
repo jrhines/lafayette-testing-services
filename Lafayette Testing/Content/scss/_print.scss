@@ -22,3 +22,15 @@ a {
 pre,
 blockquote,
 img { page-break-inside: avoid; }
+
+#content {
+	min-height: 1000px !important;
+
+	.lg-10 {
+		width: 100%;
+	}
+}
+
+#footer {
+	clear: both;
+}
