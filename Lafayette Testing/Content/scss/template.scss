@@ -1,6 +1,10 @@
 ﻿@import "flex-mixins";
 
-#container { background-color: #fff; }
+#container { 
+	background-color: #fff;
+	  max-width: none !important;
+	  width: 1200px;
+}
 
 /* ==========================================================================
    Tables
@@ -21,6 +25,7 @@ table {
 	position: relative;
 	z-index: 9;
 
+	/*
 	@media only screen and (max-width: 767px) {
 		background-color: #ddd;
 		margin-bottom: 1em;
@@ -29,6 +34,7 @@ table {
 
 		& > .row:first-child { padding-bottom: 1em; }
 	}
+	*/
 }
 
 #site-title {
@@ -93,14 +99,14 @@ table {
 
 		.arrow-down { border-top-color: #FFF; }
 	}
-
-	@media only screen and (min-width: 768px) {
+	/*
+	@media only screen and (min-width: 768px) {*/
 		.nav-item {
 			float: left;
 
 			& > a { text-align: center; }
 		}
-	}
+	/*}*/
 }
 
 .ie8 .nav li {
@@ -127,7 +133,7 @@ table {
 
 		&:hover { background-color: #eee; }
 	}
-
+	/*
 	@media only screen and (max-width: 767px) {
 		position: relative;
 		display: none;
@@ -146,19 +152,21 @@ table {
 				color: #fff;
 			}
 		}
-	}
+	}*/
 }
 
+/*
 @media only screen and (min-width: 768px) {
 	
 	#site-nav { display: block !important; }
 	
 }
+*/
 
 #site-header .utility {
 	position: absolute;
-	top: -10px;
-	left: 0;
+	top: -.5em;
+	right: 1em;
 	width: 100%;
 	text-align: right;
 
@@ -209,7 +217,10 @@ table {
    Footer
    ========================================================================== */
 
-#site-footer > .row { padding-bottom: 1em }
+#site-footer > .row { 
+	padding-bottom: 1em;
+	padding: 0 1.5em 1em 1.5em; 
+}
 
 #site-footer > .row:first-child {
 	padding-top: 1em;
@@ -218,6 +229,7 @@ table {
 
 #site-footer .col.last { text-align: right; }
 
+/*
 @media only screen and (max-width: 767px) {
 	
 	#site-footer .col { text-align: center; }
@@ -228,6 +240,7 @@ table {
 	}
 
 }
+*/
 
 #footer-nav { padding: 0 0 2em; }
 

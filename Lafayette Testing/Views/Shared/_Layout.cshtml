@@ -6,7 +6,8 @@
         @* Meta Data *@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=no" />
+        @* <meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=no" /> *@
+		
         <title>@ViewBag.Title | Lafayette Testing Services</title>
         <meta name="description" content="@ViewBag.Description" />
         <meta name="author" content="Lafayette Testing Services" />
@@ -74,7 +75,7 @@
 					@RenderSection("featured", required: false) 
 					<ul class="nav group">
 						<li class="nav-item" id="nav-item-home">@Html.ActionLink("Home", "Index", "Home")</li>
-						<li class="nav-item" id="nav-item-2">
+						<li class="nav-item" id="nav-item-nts">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nondestructive Testing Services<span class="arrow arrow-down"></span></a>
 							<ul class="dropdown-menu">
 								<li>@Html.ActionLink("Ultrasonics Testing", "ultrasonics-testing", "services")</li>
@@ -85,8 +86,8 @@
 								<li>@Html.ActionLink("Radiography Testing", "radiography-testing", "services")</li>
 							</ul>
 						</li>
-                        <li class="nav-item" id="nav-item-3">@Html.ActionLink("CNC Precision Machining", "cnc-precision-machining", "services")</li>
-						<li class="nav-item" id="nav-item-4">
+                        <li class="nav-item" id="nav-item-cnc">@Html.ActionLink("CNC Precision Machining", "cnc-precision-machining", "services")</li>
+						<li class="nav-item" id="nav-item-value-added-services">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Value Added Services<span class="arrow arrow-down"></span></a>
 							<ul class="dropdown-menu">
 								<li>@Html.ActionLink("Welding", "value-added-services", "services")</li>
@@ -98,15 +99,13 @@
 					</ul>
 				</nav>
 
-				<div class="utility hide-for-sm">
-					<div class="row">
-						<nav>
-							<ul class="inline-nav">
-								<li>@Html.ActionLink("Contact Us", "contact", "Home")</li>
-								<li>@Html.ActionLink("About Us", "about", "Home")</li>
-							</ul>
-						</nav>
-					</div>
+				<div class="utility">
+					<nav>
+						<ul class="inline-nav">
+							<li>@Html.ActionLink("Contact Us", "contact", "Home")</li>
+							<li>@Html.ActionLink("About Us", "about", "Home")</li>
+						</ul>
+					</nav>
 				</div>
             </header>
             <main id="content" role="main">
@@ -114,7 +113,7 @@
             </main>
             <footer id="site-footer" role="contentinfo">
 				<div class="row">
-					<div class="col md-4 last">
+					<div class="col sm-4 last">
 						<nav class="utility">
 							<ul class="inline-nav">
 								<li>@Html.ActionLink("Usage Agreement", "usage-agreement", "Home")</li>
@@ -123,7 +122,7 @@
 							</ul>
 						</nav>
 					</div>
-					<div class="col md-8" itemscope itemtype="http://schema.org/LocalBusiness">
+					<div class="col sm-8" itemscope itemtype="http://schema.org/LocalBusiness">
 			            <img src="~/Content/images/usa-flag.gif" id="footerFlag" alt="Made in USA" title="Made in USA" /> &#169; @DateTime.Now.Year  <span itemprop="name">Lafayette Testing Services</span>. All rights reserved.
                         <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><br />
                             <span itemprop="streetAddress">3710 North Richards Street</span> <span itemprop="addressLocality">Milwaukee</span>, <span itemprop="addressRegion">WI</span> <span itemprop="postalCode">53212</span><br />
