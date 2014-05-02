@@ -61,7 +61,7 @@
     </head>
     <body class="@ViewBag.BodyClass">
         <div id="container">
-            <header id="site-header" role="banner">
+			<header id="site-header" role="banner">
 				<div class="row">
 					<div class="col">
 						<h1 id="site-title"><a href="/"><img src="~/Content/images/lafayette-testing-services-logo.gif" alt="Lafayette Testing Services" /><span>Lafayette Testing Services</span></a></h1>
@@ -136,6 +136,8 @@
 		@Scripts.Render("~/Scripts/plugins/jquery.fancybox-2.1.5/jquery.fancybox.pack.js")
 		<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js"></script>
 		<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/additional-methods.min.js"></script>
+		<script src="//ajax.aspnetcdn.com/ajax/mvc/5.1/jquery.validate.unobtrusive.min.js"></script>
+		@Scripts.Render("~/Scripts/_form-controls.js")
 		@Scripts.Render("~/Scripts/site.js")
         @RenderSection("scripts", required: false)
     </body>

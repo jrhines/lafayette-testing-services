@@ -27,14 +27,14 @@ a {
 		transform: none;
 	}
 }
-
+/*
 @media only screen and (max-width: 767px) {
 
 	html,
 	body { overflow-x: hidden; }
 
 }
-
+*/
 /* ==========================================================================
    Buttons
    ========================================================================== */
@@ -120,7 +120,6 @@ input[type="range"],
 button { cursor: pointer; }
 
 .error,
-.required,
 .input-validation-error {
 	color: #c00;
 	font-weight: 700;
@@ -309,6 +308,12 @@ input[type="text"].datepicker {
 
 	.input-validation-msg-arrow { display: none; }
 
+}
+
+.char-counter {
+    color: #666666;
+    font-size: 85%;
+    margin-top: 3px;
 }
 
 /* ==========================================================================

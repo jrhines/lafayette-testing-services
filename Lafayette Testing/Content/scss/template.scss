@@ -1,9 +1,9 @@
 ﻿@import "flex-mixins";
 
-#container { 
+#container {
 	background-color: #fff;
-	  max-width: none !important;
-	  width: 1200px;
+	max-width: none !important;
+	width: 1200px;
 }
 
 /* ==========================================================================
@@ -188,14 +188,14 @@ table {
 	}
 
 	input { max-width: 150px; }
-
+	/*
 	@media only screen and (max-width: 1023px) {
 
 		nav { right: 309px; }
 
 		form { right: 10px; }
 
-	}
+	}*/
 }
 
 @media only screen and (max-width: 767px) {
