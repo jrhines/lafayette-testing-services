@@ -101,11 +101,6 @@ $(function () {
 		closed: 'accordion'
 	});
 
-	// add "*" to required field labels
-	$('[required]').each(function () {
-		$(this).parent().find('label').append(' <span class="required">*</span>');
-	});
-
 	// fancybox modal
 	$(".fancybox").fancybox({
 		openEffect: 'none',

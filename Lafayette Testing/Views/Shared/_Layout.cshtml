@@ -33,7 +33,9 @@
 		<meta name="twitter:image" content="" />
 		<meta name="twitter:domain" content="" />
         
-        @* Global CSS *@
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+		
+		@* Global CSS *@
         @Styles.Render("~/Content/css/site.css")
 		@Styles.Render("~/Content/css/template.css")
 
@@ -137,8 +139,7 @@
 		<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js"></script>
 		<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/additional-methods.min.js"></script>
 		<script src="//ajax.aspnetcdn.com/ajax/mvc/5.1/jquery.validate.unobtrusive.min.js"></script>
-		@Scripts.Render("~/Scripts/_form-controls.js")
+		@RenderSection("scripts", required: false)
 		@Scripts.Render("~/Scripts/site.js")
-        @RenderSection("scripts", required: false)
     </body>
 </html>

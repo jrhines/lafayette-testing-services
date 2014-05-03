@@ -5,7 +5,7 @@
 }
 
 <section class="section row">
-	<div id="primary" class="">
+	<div id="primary">
 		<nav class="breadcrumb col sm-12" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="">
 			<h1 class="assistive-text">Breadcrumb navigation</h1>
 			<ol>
@@ -34,9 +34,9 @@
 				</header>
 				<div class="section-content"> 
 					<form action="/cgi-bin/formmail/formMailer.pl" id="contactForm" name="contactForm" method="post" class="col md-9 lg-7" novalidate="novalidate">
-						<div class="form-group">&#40;&#42;&#41; Required fields.</div>
-						<fieldset class="form-section">
-							<legend class="assistive-text">Personal Information</legend>
+						<div>&#40;&#42;&#41; Required fields.</div>
+						<fieldset>
+							<legend>Personal Information</legend>
 							<div class="row">
 								<div class="form-group col xs-12 sm-6 md-6"> 
 									<label for="FirstName">First Name</label>
@@ -385,38 +385,38 @@
 									<option value="Zimbabwe">Zimbabwe</option>
 								</select>
 							</div>
-							
-							<div class="row">
-								<div class="form-group col xs-12 sm-6">
-									<label for="Phone">Phone Number</label>
-									<input type="tel" id="Phone" name="Phone" title="Please enter a Phone Number." required data-val="true" data-val-length="Phone Number length cannot exceed 10 characters" data-val-length-max="14" data-val-required="Please enter a Phone Number." maxlength="14" />
-									<span class="field-validation-valid" data-valmsg-for="Phone" data-valmsg-replace="true"></span>
-								</div>
-
-								<div class="form-group col xs-12 sm-6">
-									<label for="Email">Email Address</label>
-									<input type="email" id="Email" name="Email" title="Please enter an Email Address" required data-val="true" data-val-length="Email Address length cannot exceed 254 characters" data-val-length-max="254" data-val-email="Please enter a valid Email Address." data-val-required="Please enter an Email Address." maxlength="254" />
-									<span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
-								</div>
-							</div>
-
-							<div class="form-group char-limiter">
-								<label class="left" for="Comments">Comments / Questions?</label>
-								<div class="right char-counter"><span class="char-count"></span> characters remain</div>
-								<textarea id="Comments" name="Comments" maxlength="500"></textarea>
-								<span class="field-validation-valid" data-valmsg-for="Comments" data-valmsg-replace="true"></span>
-							</div>
-
-							<div class="form-group">
-								<button class="btn btn-primary btn-submit" type="submit">Submit</button>
-							</div>
-
-							<div id="error-message" class="error form-validation-msg">
-								<span class="form-validation-msg-icon">&#33;</span>
-								<p></p>
-							</div>
-
 						</fieldset>
+							
+						<div class="row">
+							<div class="form-group col xs-12 sm-6">
+								<label for="Phone">Phone Number</label>
+								<input type="tel" id="Phone" name="Phone" title="Please enter a Phone Number." required data-val="true" data-val-length="Phone Number length cannot exceed 10 characters" data-val-length-max="14" data-val-required="Please enter a Phone Number." maxlength="14" />
+								<span class="field-validation-valid" data-valmsg-for="Phone" data-valmsg-replace="true"></span>
+							</div>
+
+							<div class="form-group col xs-12 sm-6">
+								<label for="Email">Email Address</label>
+								<input type="email" id="Email" name="Email" title="Please enter an Email Address" required data-val="true" data-val-length="Email Address length cannot exceed 254 characters" data-val-length-max="254" data-val-email="Please enter a valid Email Address." data-val-required="Please enter an Email Address." maxlength="254" />
+								<span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+							</div>
+						</div>
+
+						<div class="form-group char-limiter">
+							<label class="left" for="Comments">Comments / Questions?</label>
+							<div class="right char-counter"><span class="char-count"></span> characters remain</div>
+							<textarea id="Comments" name="Comments" maxlength="500"></textarea>
+							<span class="field-validation-valid" data-valmsg-for="Comments" data-valmsg-replace="true"></span>
+						</div>
+
+						<div class="form-group">
+							<button class="btn btn-primary btn-submit" type="submit">Submit</button>
+						</div>
+
+						<div class="form-validation-error" style="display: none;">
+							<span class="fa fa-exclamation-circle fa-2x"></span>
+							<p></p>
+						</div>
+
 					</form>
 				</div>
 			</section>
@@ -426,3 +426,9 @@
 		</div>
 	</div>
 </section>
+
+@section scripts {
+	@Scripts.Render("~/Scripts/plugins/jquery.maskedinput/jquery.maskedinput-1.3.1.js")
+	@Scripts.Render("~/Scripts/tooltips.js")
+	@Scripts.Render("~/Scripts/_form-controls.js")
+}

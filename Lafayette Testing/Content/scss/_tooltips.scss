@@ -1,0 +1,42 @@
+[data-tooltip] {
+	color: #000;
+	cursor: pointer;
+
+	&:hover { color: $tooltip-trigger-hover-color; }
+}
+
+.tooltip-trigger-icon { font-size: 120%; }
+
+.tooltip {
+	position: absolute;
+	z-index: 9999;
+	padding: 1em;
+	width: 100%;
+	max-width: $tooltip-max-width;
+	background: $tooltip-bg;
+	color: $tooltip-color;
+	@if $tooltip-border-radius != 0 {
+		border-radius: $tooltip-border-radius;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		border: $tooltip-arrow-width solid transparent;
+		border-top-color: $tooltip-arrow-color;
+		margin-left: -$tooltip-arrow-width;
+	}
+}
+
+.tooltip-left:after {
+	left: 1em;
+	margin-left: 0;
+}
+
+.tooltip-right:after {
+	right: 1em;
+	left: auto;
+	margin-left: 0;
+}

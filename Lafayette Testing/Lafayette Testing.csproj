@@ -565,6 +565,9 @@
     <Content Include="Content\scss\_video.scss" />
     <Content Include="Content\images\about\images\Thumbs.db" />
     <Content Include="Content\images\about\thumbnails\Thumbs.db" />
+    <Content Include="Content\scss\_forms.scss" />
+    <Content Include="Content\scss\_variables.scss" />
+    <Content Include="Content\scss\_tooltips.scss" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="robots.txt" />
     <Content Include="Scripts\jquery-1.8.2.js" />
@@ -609,6 +612,7 @@
     <Content Include="Scripts\plugins\jquery.mediaCheck-0.2.2\mediaCheck-min.js" />
     <Content Include="Scripts\plugins\jquery.mediaCheck-0.2.2\mediaCheck.js" />
     <Content Include="Scripts\site.js" />
+    <Content Include="Scripts\_form-controls.js" />
     <Content Include="sitemap.xml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
