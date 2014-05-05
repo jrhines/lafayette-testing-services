@@ -667,6 +667,7 @@
     <Content Include="Views\Services\RadiographyTesting.cshtml" />
     <Content Include="Views\Services\ComplimentaryServices.cshtml" />
     <Content Include="Views\Services\CNCPrecisionMachining.cshtml" />
+    <Content Include="Views\Services\ValueAddedServices.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
