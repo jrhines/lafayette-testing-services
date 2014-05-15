@@ -1,0 +1,20 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+@{
+    ViewBag.Title = "Internal Server Error";
+    ViewBag.BodyClass = "error-info";
+}
+
+<div class="section row">
+    <div class="section-header col">
+        <h1 class="page-title">Internal Server Error</h1>
+    </div>
+
+    <div class="section-content col">
+        <p>The server encountered an internal error or misconfiguration and was unable to complete your request. You can try to resolve the problem by:</p>
+        <ul>
+            <li>Clicking the <a href="#" onclick="history.back(-1);return false">back button</a> on your browser</li>
+            <li>Using the navigation at the top of the page</li>
+            <li>Using the <a href="#">site map</a></li>
+        </ul>
+    </div>
+</div>
