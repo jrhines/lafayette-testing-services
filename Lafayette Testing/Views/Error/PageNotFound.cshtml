@@ -5,16 +5,18 @@
 }
 
 <div class="section row">
-    <div class="section-header col">
-        <h1 class="page-title">Page Not Found</h1>
+    <div id="primary">
+		<header class="section-header col">
+			<h1 class="section-title">@ViewBag.Title</h1>
+		</header>
     </div>
 
-    <div class="section-content col">
-        <p>We’re sorry, the page you requested is unavailable. Please modify your request by clicking the <a href="#" onclick="history.back(-1);return false">back button</a> on your browser or you can try to resolve the problem by:</p>
+    <div class="section-content col lg-12">
+        <p>We&#39;re sorry, the page you requested is unavailable. Please modify your request by clicking the <a href="#" onclick="history.back(-1);return false">back button</a> on your browser or you can try to resolve the problem by:</p>
         <ul>
             <li>Using the navigation at the top of the page</li>
-            <li>Viewing the <a href="#">site map</a></li>
-            <li>Entering keywords into the search box on the top right of the page</li>
+            <li>Viewing the @Html.ActionLink("site map", "site-map", "Home")</li>
+            @*<li>Entering keywords into the search box on the top right of the page</li>*@
         </ul>
     </div>
 </div>
