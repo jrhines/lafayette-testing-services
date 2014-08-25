@@ -58,9 +58,13 @@ footer {
 }
 
 // home
+.home h1,
+.home h2,
+.home h3 {
+	font-weight: bold;
+}
 
 #positioning-statement {
-	vertical-align: middle;
 	background-color: #B3BCCC;
 	border-radius: 0 0 12px 12px; /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
 	/* useful if you don't want a bg color from leaking outside the border: */
@@ -76,10 +80,9 @@ footer {
 	}
 	
 	.sm-7 {
-		padding: 15% 3% 0 2%;
+		padding: 11% 3% 0 2%;
 
 		h1, h2 {
-			font-weight: bold;
 			line-height: 80%;
 		}
 
@@ -93,6 +96,30 @@ footer {
 			font-size: 2em;
 		}
 	}
+}
+
+#benefits-narratives {
+	position: relative;
+	top: -102px;
+	
+	li {
+		float: left;
+		width: 31.5%;
+	}
+
+	img {
+		margin: 0 0 1em 0;
+	}
+
+	ul li {
+		float: none;
+		width: auto;
+		list-style-type: disc;
+	}
+}
+
+#benefits-narrative-central {
+	margin: 0 1.5em;
 }
 
 // about

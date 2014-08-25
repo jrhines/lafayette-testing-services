@@ -1165,8 +1165,12 @@ footer {
 .error-info footer {
   top: 0; }
 
+.home h1,
+.home h2,
+.home h3 {
+  font-weight: bold; }
+
 #positioning-statement {
-  vertical-align: middle;
   background-color: #B3BCCC;
   border-radius: 0 0 12px 12px;
   /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
@@ -1183,9 +1187,8 @@ footer {
     background-clip: padding-box;
     /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 4+ */ }
   #positioning-statement .sm-7 {
-    padding: 15% 3% 0 2%; }
+    padding: 11% 3% 0 2%; }
     #positioning-statement .sm-7 h1, #positioning-statement .sm-7 h2 {
-      font-weight: bold;
       line-height: 80%; }
     #positioning-statement .sm-7 h1 {
       font-size: 2.9em;
@@ -1193,6 +1196,22 @@ footer {
     #positioning-statement .sm-7 h2 {
       margin-bottom: 1em;
       font-size: 2em; }
+
+#benefits-narratives {
+  position: relative;
+  top: -102px; }
+  #benefits-narratives li {
+    float: left;
+    width: 31.5%; }
+  #benefits-narratives img {
+    margin: 0 0 1em 0; }
+  #benefits-narratives ul li {
+    float: none;
+    width: auto;
+    list-style-type: disc; }
+
+#benefits-narrative-central {
+  margin: 0 1.5em; }
 
 #lts-leadership {
   float: left;
