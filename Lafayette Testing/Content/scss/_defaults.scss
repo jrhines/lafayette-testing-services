@@ -38,12 +38,12 @@ small { font-size: .9em; }
 	clip: rect(1px, 1px, 1px, 1px);
 }
 
+.inline-nav { display: inline; }
+
 .inline-nav li { display: inline; }
 
 .inline-nav li + li {
-	border-left: 1px solid #666;
-	margin-left: .5em;
-	padding-left: .75em;
+	margin-left: 1em;
 }
 
 .clear { clear: both; }

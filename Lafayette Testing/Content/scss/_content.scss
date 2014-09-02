@@ -46,7 +46,34 @@
 
 footer {
 	position: relative;
-	top: -6.5em;
+	background-color: $body-bg;
+	color: #FFF;
+
+	h6,
+	.tel.primary {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 110%;
+	}
+
+	.tel.primary { font-size: 140%; }
+
+	a { color: #FFF; }
+
+	.nts-links-a,
+	nts-links-b {
+		float: left;
+		margin: 0 3em 0 0;
+	}
+
+	nts-links-b {
+		margin: 0;
+	}
+
+	#utility { 
+		margin: 2em 0 0 0;
+		text-align: center; 
+	}
 }
 
 // error 

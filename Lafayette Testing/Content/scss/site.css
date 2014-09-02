@@ -649,13 +649,14 @@ small {
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px); }
 
+.inline-nav {
+  display: inline; }
+
 .inline-nav li {
   display: inline; }
 
 .inline-nav li + li {
-  border-left: 1px solid #666;
-  margin-left: .5em;
-  padding-left: .75em; }
+  margin-left: 1em; }
 
 .clear {
   clear: both; }
@@ -682,7 +683,8 @@ address {
 body {
   font: 400 14px/1.6 'Helvetica Neue', sans-serif;
   color: #000;
-  margin: 0; }
+  margin: 0;
+  background-color: #4a4a5a; }
 
 a {
   color: #2752a4; }
@@ -1160,7 +1162,26 @@ input[type="text"].datepicker {
 
 footer {
   position: relative;
-  top: -6.5em; }
+  background-color: #4a4a5a;
+  color: #FFF; }
+  footer h6,
+  footer .tel.primary {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 110%; }
+  footer .tel.primary {
+    font-size: 140%; }
+  footer a {
+    color: #FFF; }
+  footer .nts-links-a,
+  footer nts-links-b {
+    float: left;
+    margin: 0 3em 0 0; }
+  footer nts-links-b {
+    margin: 0; }
+  footer #utility {
+    margin: 2em 0 0 0;
+    text-align: center; }
 
 .error-info footer {
   top: 0; }

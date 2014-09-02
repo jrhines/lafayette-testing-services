@@ -115,25 +115,52 @@
             </main>
             <footer id="site-footer" role="contentinfo">
 				<div class="row">
-					<div class="col sm-4 last">
-						<nav class="utility">
-							<ul class="inline-nav">
-								<li>@Html.ActionLink("Usage Agreement", "usage-agreement", "Home")</li>
-								<li>@Html.ActionLink("Privacy Statement", "privacy-statement", "Home")</li>
-								<li>@Html.ActionLink("Site Map", "site-map", "Home")</li>
-							</ul>
-						</nav>
+					<div class="col sm-5">
+						<h6>Nondestructive Testing Services</h6>
+						<ul class="reduced nts-links-a">
+							<li>@Html.ActionLink("Ultrasonics Testing", "ultrasonics-testing", "services")</li>
+							<li>@Html.ActionLink("Liquid Penetrant Testing", "liquid-penetrant-testing", "services")</li>
+							<li>@Html.ActionLink("Magnetic Particle Testing", "magnetic-particle-testing", "services")</li>
+						</ul>
+						<ul class="reduced nts-links-b">
+                            <li>@Html.ActionLink("High Energy X-Ray Testing", "high-energy-x-ray-testing", "services")</li>
+                            <li>@Html.ActionLink("Digital Radiography Testing", "digital-radiography-testing", "services")</li>
+							<li>@Html.ActionLink("Radiography Testing", "radiography-testing", "services")</li>
+						</ul>
 					</div>
-					<div class="col sm-8" itemscope itemtype="http://schema.org/LocalBusiness">
-			            <img src="~/Content/images/usa-flag.gif" id="footerFlag" alt="Made in USA" title="Made in USA" /> &#169; @DateTime.Now.Year  <span itemprop="name">Lafayette Testing Services</span>. All rights reserved.
-                        <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><br />
-                            <span itemprop="streetAddress">3710 North Richards Street</span> <span itemprop="addressLocality">Milwaukee</span>, <span itemprop="addressRegion">WI</span> <span itemprop="postalCode">53212</span><br />
-							Main: <span class="tel" itemprop="telephone">1-800-337-4884</span> <span class="pipe">&#8729;</span> Fax: <span itemprop="faxNumber">414-332-3652</span>
-                        </span>
+					<div class="col sm-3">
+						<h6>@Html.ActionLink("Value Added Services", "value-added-services", "services")</h6>
+						<ul class="reduced">
+							<li>@Html.ActionLink("Mechanical Polishing", "value-added-services", "services")</li>
+							<li>@Html.ActionLink("Parts Washing", "value-added-services", "services")</li>
+                            <li>@Html.ActionLink("Sandblasting", "value-added-services", "services")</li>
+							<li>@Html.ActionLink("Welding", "value-added-services", "services")</li>
+						</ul>
+					</div>
+					<div class="col sm-2">
+						<h6>@Html.ActionLink("About LTS", "about", "Home")</h6>
+					</div>
+					<div class="col sm-2">
+						<h6>@Html.ActionLink("Contact", "contact", "Home")</h6>
+						<span class="tel primary">1-800-337-4884</span>
 					</div>
 				</div>
+				<div id="utility" class="row">
+					<div class="col sm-12" itemscope itemtype="http://schema.org/LocalBusiness">
+                        <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+							<span itemprop="name" class="assistive-text">Lafayette Testing Services</span>
+                            <span itemprop="streetAddress">3710 North Richards Street</span> &#8226; <span itemprop="addressLocality">Milwaukee</span>, <span itemprop="addressRegion">WI</span> <span itemprop="postalCode">53212</span> &#8226; T: <span class="tel" itemprop="telephone">1-800-337-4884</span> &#8226; F: <span itemprop="faxNumber">414-332-3652</span>
+                        </span>
+					</div><br />
+					&#169; @DateTime.Now.Year Lafayette Testing Services. All rights reserved.
+					<ul class="inline-nav">
+						<li>@Html.ActionLink("Usage Agreement", "usage-agreement", "Home")</li>
+						<li>@Html.ActionLink("Privacy Statement", "privacy-statement", "Home")</li>
+						<li>@Html.ActionLink("Site Map", "site-map", "Home")</li>
+					</ul>
+				</div>
             </footer>
-        </div>
+		</div>
         @Scripts.Render("~/Scripts/plugins/jquery.easyResponsiveTabs/jquery.easyResponsiveTabs.min.js")
 		@Scripts.Render("~/Scripts/plugins/jquery.fancybox-2.1.5/jquery.fancybox.pack.js")
 		<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js"></script>
