@@ -64,57 +64,48 @@
     <body class="@ViewBag.BodyClass">
         <div id="container">
 			<header id="site-header" role="banner">
-				<div class="row">
-					<div class="col">
-						<h1 id="site-title"><a href="/"><img src="~/Content/images/lafayette-testing-services-logo.gif" alt="Lafayette Testing Services" /><span>Lafayette Testing Services</span></a></h1>
-						<h2 class="print">1-800-337-4884</h2>
-					</div>
-				</div>
-
 				<nav id="site-nav" class="collapsed row" role="navigation">
-					<h2 class="assistive-text">Main navigation</h2>
-					<a href="#content" class="skip-link assistive-text">Skip to content</a>
-					@RenderSection("featured", required: false) 
-					<ul class="nav group">
-						<li class="nav-item" id="nav-item-home">@Html.ActionLink("Home", "Index", "Home")</li>
-						<li class="nav-item" id="nav-item-nts">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nondestructive Testing Services<span class="arrow arrow-down"></span></a>
-							<ul class="dropdown-menu">
-								<li>@Html.ActionLink("Ultrasonics Testing", "ultrasonics-testing", "services")</li>
-								<li>@Html.ActionLink("Liquid Penetrant Testing", "liquid-penetrant-testing", "services")</li>
-								<li>@Html.ActionLink("Magnetic Particle Testing", "magnetic-particle-testing", "services")</li>
-                                <li>@Html.ActionLink("High Energy X-Ray Testing", "high-energy-x-ray-testing", "services")</li>
-                                <li>@Html.ActionLink("Digital Radiography Testing", "digital-radiography-testing", "services")</li>
-								<li>@Html.ActionLink("Radiography Testing", "radiography-testing", "services")</li>
-							</ul>
-						</li>
-                        <li class="nav-item" id="nav-item-cnc">@Html.ActionLink("CNC Precision Machining", "cnc-precision-machining", "services")</li>
-						<li class="nav-item" id="nav-item-value-added-services">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Value Added Services<span class="arrow arrow-down"></span></a>
-							<ul class="dropdown-menu">
-								<li>@Html.ActionLink("Welding", "value-added-services", "services")</li>
-								<li>@Html.ActionLink("Mechanical Polishing", "value-added-services", "services")</li>
-								<li>@Html.ActionLink("Parts Washing", "value-added-services", "services")</li>
-                                <li>@Html.ActionLink("Sandblasting", "value-added-services", "services")</li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
-
-				<div class="utility">
-					<nav>
-						<ul class="inline-nav">
-							<li>@Html.ActionLink("Contact Us", "contact", "Home")</li>
-							<li>@Html.ActionLink("About Us", "about", "Home")</li>
+					<div class="col sm-5">
+						<h6 id="site-title"><a href="/"><img src="~/Content/images/lafayette-testing-services-logo.gif" alt="Lafayette Testing Services" /><span>Lafayette Testing Services</span></a></h6>
+					</div>
+					<div class="col sm-7">
+						<h6 class="assistive-text">Main navigation</h6>
+						<a href="#content" class="skip-link assistive-text">Skip to content</a>
+	@RenderSection("featured", required: false) 
+				
+						<p class="tel">1-800-337-4884</p>
+						<ul class="nav group">
+							<li class="nav-item" id="nav-item-home">@Html.ActionLink("Home", "Index", "Home")</li>
+							<li class="nav-item" id="nav-item-nts">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Nondestructive Testing Services<span class="arrow arrow-down"></span></a>
+								<ul class="dropdown-menu">
+									<li>@Html.ActionLink("Ultrasonics Testing", "ultrasonics-testing", "services")</li>
+									<li>@Html.ActionLink("Liquid Penetrant Testing", "liquid-penetrant-testing", "services")</li>
+									<li>@Html.ActionLink("Magnetic Particle Testing", "magnetic-particle-testing", "services")</li>
+									<li>@Html.ActionLink("High Energy X-Ray Testing", "high-energy-x-ray-testing", "services")</li>
+									<li>@Html.ActionLink("Digital Radiography Testing", "digital-radiography-testing", "services")</li>
+									<li>@Html.ActionLink("Radiography Testing", "radiography-testing", "services")</li>
+								</ul>
+							</li>
+							<li class="nav-item" id="nav-item-cnc">@Html.ActionLink("CNC Precision Machining", "cnc-precision-machining", "services")</li>
+							<li class="nav-item" id="nav-item-value-added-services">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Value Added Services<span class="arrow arrow-down"></span></a>
+								<ul class="dropdown-menu">
+									<li>@Html.ActionLink("Welding", "value-added-services", "services")</li>
+									<li>@Html.ActionLink("Mechanical Polishing", "value-added-services", "services")</li>
+									<li>@Html.ActionLink("Parts Washing", "value-added-services", "services")</li>
+									<li>@Html.ActionLink("Sandblasting", "value-added-services", "services")</li>
+								</ul>
+							</li>
 						</ul>
-					</nav>
-				</div>
+					</div>
+				</nav>
             </header>
             <main id="content" role="main">
 				@RenderBody()
             </main>
             <footer id="site-footer" role="contentinfo">
-				<div class="row">
+				<nav id="footer-nav" class="row">
 					<div class="col sm-5">
 						<h6>Nondestructive Testing Services</h6>
 						<ul class="reduced nts-links-a">
@@ -144,8 +135,8 @@
 						<h6>@Html.ActionLink("Contact", "contact", "Home")</h6>
 						<span class="tel primary">1-800-337-4884</span>
 					</div>
-				</div>
-				<div id="utility" class="row">
+				</nav>
+				<nav id="utility" class="row">
 					<div class="col sm-12" itemscope itemtype="http://schema.org/LocalBusiness">
                         <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 							<span itemprop="name" class="assistive-text">Lafayette Testing Services</span>
@@ -158,7 +149,7 @@
 						<li>@Html.ActionLink("Privacy Statement", "privacy-statement", "Home")</li>
 						<li>@Html.ActionLink("Site Map", "site-map", "Home")</li>
 					</ul>
-				</div>
+				</nav>
             </footer>
 		</div>
         @Scripts.Render("~/Scripts/plugins/jquery.easyResponsiveTabs/jquery.easyResponsiveTabs.min.js")

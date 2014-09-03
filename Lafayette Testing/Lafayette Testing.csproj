@@ -229,6 +229,9 @@
     <Content Include="Content\images\about\thumbnails\LTS081706_270.jpg" />
     <Content Include="Content\images\about\thumbnails\LTS081706_302.jpg" />
     <Content Include="Content\images\about\thumbnails\LTS081706_329.jpg" />
+    <Content Include="Content\images\benefits-facility-crop.jpg" />
+    <Content Include="Content\images\benefits-parts-dip.jpg" />
+    <Content Include="Content\images\benefits-x-ray-crop.jpg" />
     <Content Include="Content\images\cnc-precision-machining-logo.gif" />
     <Content Include="Content\images\cnc-precision-machining\images\DSC_0049.jpg" />
     <Content Include="Content\images\cnc-precision-machining\images\DSC_0055.jpg" />
@@ -258,7 +261,6 @@
     <Content Include="Content\images\cnc-precision-machining\thumbnails\DSC_0138.jpg" />
     <Content Include="Content\images\cnc-precision-machining\thumbnails\DSC_0139.jpg" />
     <Content Include="Content\images\cnc-precision-machining\thumbnails\DSC_0146.jpg" />
-    <Content Include="Content\images\complimentary-services-logo.gif" />
     <Content Include="Content\images\complimentary-services\images\LTS081706_166.jpg" />
     <Content Include="Content\images\complimentary-services\images\LTS081706_170.jpg" />
     <Content Include="Content\images\complimentary-services\images\LTS081706_184.jpg" />
@@ -321,8 +323,6 @@
     <Content Include="Content\images\digital-radiography-testing\thumbnails\LTS050207_016.jpg" />
     <Content Include="Content\images\digital-radiography-testing\thumbnails\LTS050207_018.jpg" />
     <Content Include="Content\images\digital-radiography-testing\thumbnails\LTS050207_024.jpg" />
-    <Content Include="Content\images\digital-x-ray-test.png" />
-    <Content Include="Content\images\dry-powder-test.png" />
     <Content Include="Content\images\header-curve.png" />
     <Content Include="Content\images\high-energy-x-ray-testing-logo.gif" />
     <Content Include="Content\images\high-energy-x-ray-testing.jpg" />
@@ -362,13 +362,8 @@
     <Content Include="Content\images\high-energy-x-ray-testing\thumbnails\LTS050207_100.jpg" />
     <Content Include="Content\images\high-energy-x-ray-testing\thumbnails\LTS050207_118.jpg" />
     <Content Include="Content\images\high-energy-x-ray-testing\thumbnails\LTS050207_123.jpg" />
-    <Content Include="Content\images\lafayette-testing-services-capabilities-logo.gif" />
-    <Content Include="Content\images\lafayette-testing-services-data-analysis.jpg" />
-    <Content Include="Content\images\lafayette-testing-services-lab.jpg" />
     <Content Include="Content\images\lafayette-testing-services-leadership.jpg" />
     <Content Include="Content\images\lafayette-testing-services-logo.gif" />
-    <Content Include="Content\images\lafayette-testing-services-professionals.jpg" />
-    <Content Include="Content\images\liquid-penetrant-test.png" />
     <Content Include="Content\images\liquid-penetrant-testing-logo.gif" />
     <Content Include="Content\images\liquid-penetrant-testing\images\LTS081706_047.jpg" />
     <Content Include="Content\images\liquid-penetrant-testing\images\LTS081706_050.jpg" />
@@ -479,7 +474,6 @@
     <Content Include="Content\images\radiography-testing\thumbnails\LTS081706_331.jpg" />
     <Content Include="Content\images\radiography-testing\thumbnails\LTS081706_338.jpg" />
     <Content Include="Content\images\right-rail-cnc-machining.jpg" />
-    <Content Include="Content\images\right-rail-complimentary-services.jpg" />
     <Content Include="Content\images\right-rail-digital-radiography-testing.jpg" />
     <Content Include="Content\images\right-rail-entrance.jpg" />
     <Content Include="Content\images\right-rail-high-energy-x-ray-testing.jpg" />
@@ -487,8 +481,9 @@
     <Content Include="Content\images\right-rail-magnetic-particle-testing.jpg" />
     <Content Include="Content\images\right-rail-radiography-testing.jpg" />
     <Content Include="Content\images\right-rail-ultrasonics-testing.jpg" />
+    <Content Include="Content\images\right-rail-value-added-services.jpg" />
     <Content Include="Content\images\ultrasonics-testing-logo.gif" />
-    <Content Include="Content\images\usa-flag.gif" />
+    <Content Include="Content\images\value-added-services-logo.gif" />
     <Content Include="Content\images\value-added-services\images\LTS081706_166.jpg" />
     <Content Include="Content\images\value-added-services\images\LTS081706_170.jpg" />
     <Content Include="Content\images\value-added-services\images\LTS081706_184.jpg" />
@@ -540,6 +535,9 @@
     <Content Include="Content\images\wet-fluorescent-magnetic-test.png" />
     <Content Include="Content\scss\site.css">
       <DependentUpon>site.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\scss\template.css">
+      <DependentUpon>template.scss</DependentUpon>
     </Content>
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />

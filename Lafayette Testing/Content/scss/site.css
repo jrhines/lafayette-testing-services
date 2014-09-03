@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -681,7 +681,7 @@ address {
   text-transform: uppercase; }
 
 body {
-  font: 400 14px/1.6 'Helvetica Neue', sans-serif;
+  font: 400 14px/1.6 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #000;
   margin: 0;
   background-color: #4a4a5a; }
@@ -1042,9 +1042,6 @@ input[type="text"].datepicker {
     text-align: center;
     vertical-align: middle; }
 
-#site-header {
-  padding: .5em 0 0 0; }
-
 #site-title {
   margin: 0;
   padding: 0;
@@ -1059,39 +1056,10 @@ input[type="text"].datepicker {
   width: 300px;
   color: #001B51; }
 
-#site-header h2 {
-  display: none;
-  position: absolute;
-  top: 1em;
-  right: 0; }
-
-#site-nav {
-  padding: 24px 0 0 0;
-  background: transparent url(/Content/images/header-curve.png) no-repeat top left; }
-
 .nav {
-  background: #001b51;
-  /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMWI1MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyMDdjY2EiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top, #001b51 0%, #207cca 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #001b51), color-stop(100%, #207cca));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #001b51 0%, #207cca 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #001b51 0%, #207cca 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #001b51 0%, #207cca 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, #001b51 0%, #207cca 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#001b51', endColorstr='#207cca',GradientType=0 );
-  /* IE6-8 */
   text-transform: uppercase;
   font-weight: bold;
-  border-top: 1px solid #FFF;
-  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.25); }
+  background-color: #001c52 !important; }
 
 #nav-toggle {
   padding: 4px 0;
@@ -1127,6 +1095,29 @@ input[type="text"].datepicker {
 	
 }
 */
+footer {
+  position: relative;
+  background-color: #4a4a5a;
+  color: #FFF; }
+  footer h6,
+  footer .tel.primary {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 110%; }
+  footer .tel.primary {
+    font-size: 140%; }
+  footer a {
+    color: #FFF; }
+  footer .nts-links-a,
+  footer nts-links-b {
+    float: left;
+    margin: 0 3em 0 0; }
+  footer nts-links-b {
+    margin: 0; }
+  footer #utility {
+    margin: 2em 0 0 0;
+    text-align: center; }
+
 .breadcrumb {
   margin: -1em 0 1em 0;
   font-size: .8em; }
@@ -1160,29 +1151,6 @@ input[type="text"].datepicker {
 .value-added-services .accent {
   min-height: 1300px; }
 
-footer {
-  position: relative;
-  background-color: #4a4a5a;
-  color: #FFF; }
-  footer h6,
-  footer .tel.primary {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 110%; }
-  footer .tel.primary {
-    font-size: 140%; }
-  footer a {
-    color: #FFF; }
-  footer .nts-links-a,
-  footer nts-links-b {
-    float: left;
-    margin: 0 3em 0 0; }
-  footer nts-links-b {
-    margin: 0; }
-  footer #utility {
-    margin: 2em 0 0 0;
-    text-align: center; }
-
 .error-info footer {
   top: 0; }
 
@@ -1192,21 +1160,11 @@ footer {
   font-weight: bold; }
 
 #positioning-statement {
-  background-color: #B3BCCC;
-  border-radius: 0 0 12px 12px;
-  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
-  /* useful if you don't want a bg color from leaking outside the border: */
-  background-clip: padding-box;
-  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 4+ */ }
+  background-color: #B3BCCC; }
   #positioning-statement img {
     padding: 0;
     border: solid 1px #FFF;
-    border-width: 0 1px 0 0;
-    border-radius: 0 0 0 12px;
-    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
-    /* useful if you don't want a bg color from leaking outside the border: */
-    background-clip: padding-box;
-    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 4+ */ }
+    border-width: 0 1px 0 0; }
   #positioning-statement .sm-7 {
     padding: 11% 3% 0 2%; }
     #positioning-statement .sm-7 h1, #positioning-statement .sm-7 h2 {
@@ -1220,7 +1178,8 @@ footer {
 
 #benefits-narratives {
   position: relative;
-  top: -102px; }
+  top: -100px;
+  overflow: hidden; }
   #benefits-narratives li {
     float: left;
     width: 31.5%; }
