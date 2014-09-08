@@ -1043,23 +1043,31 @@ input[type="text"].datepicker {
     vertical-align: middle; }
 
 #site-title {
-  margin: 0;
-  padding: 0;
+  padding: .25em 0 0 .25em;
   font-size: 122%;
   font-weight: bold;
   text-transform: uppercase; }
 
 #site-title span {
   position: absolute;
-  top: 25px;
+  top: 1.5em;
   margin: 0 0 0 10px;
-  width: 300px;
   color: #001B51; }
 
-.nav {
+.tel.primary {
+  padding: .5em 1.4em 0 0;
+  margin: 0;
+  text-align: right;
   text-transform: uppercase;
   font-weight: bold;
-  background-color: #001c52 !important; }
+  font-size: 140%;
+  color: #FFF; }
+
+#site-nav .col {
+  padding: 0; }
+
+#site-nav .sm-7 {
+  background-color: #001c52; }
 
 #nav-toggle {
   padding: 4px 0;
@@ -1079,7 +1087,8 @@ input[type="text"].datepicker {
   position: absolute;
   top: 0;
   left: 0;
-  width: 258px; }
+  width: 258px;
+  border: solid 1px yellow; }
 
 /*
 @media only screen and (min-width: 768px) {
@@ -1119,7 +1128,8 @@ footer {
     text-align: center; }
 
 .breadcrumb {
-  margin: -1em 0 1em 0;
+  margin: 0 0 1em 0;
+  padding: 0;
   font-size: .8em; }
   .breadcrumb li {
     display: inline; }
@@ -1129,11 +1139,6 @@ footer {
   @media print {
     .breadcrumb {
       display: none; } }
-
-#primary,
-#secondary,
-#tertiary {
-  padding-top: 2em; }
 
 .accent {
   top: -6.5em;

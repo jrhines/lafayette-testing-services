@@ -1,10 +1,5 @@
-#site-header { 
-	
-}
-
 #site-title {
-	margin: 0;
-	padding: 0;
+	padding: .25em 0 0 .25em;
 	font-size: 122%; 
 	font-weight: bold; 
 	text-transform: uppercase;
@@ -12,20 +7,27 @@
 
 #site-title span {
 	position: absolute;
-	top: 25px;
+	top: 1.5em;
 	margin: 0 0 0 10px;
-	width: 300px;
 	color: #001B51;
 }
 
-#site-nav {
-	
-}
-
-.nav {
+.tel.primary {
+	padding: .5em 1.4em 0 0;
+	margin: 0;
+	text-align: right;
 	text-transform: uppercase;
 	font-weight: bold;
-	background-color: #001c52 !important;
+	font-size: 140%;
+	color: #FFF;
+}
+
+#site-nav .col {
+	padding: 0;
+}
+
+#site-nav .sm-7 {
+	background-color: #001c52;
 }
 
 #nav-toggle {
@@ -51,6 +53,7 @@
 	top: 0;
 	left: 0;
 	width: 258px;
+	border: solid 1px yellow;
 }
 
 /*
