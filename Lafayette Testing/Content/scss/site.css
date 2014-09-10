@@ -1141,20 +1141,8 @@ footer {
       display: none; } }
 
 .accent {
-  top: -6.5em;
-  padding: 0;
-  min-height: 900px;
-  background-color: #224998;
-  text-align: right; }
-
-.contact .accent {
-  min-height: 1000px; }
-
-.cnc-precision-machining .accent {
-  min-height: 1100px; }
-
-.value-added-services .accent {
-  min-height: 1300px; }
+  padding: 0 0 55% 0;
+  background-color: #224998; }
 
 .error-info footer {
   top: 0; }
