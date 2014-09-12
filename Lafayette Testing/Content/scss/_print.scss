@@ -6,10 +6,12 @@
 	text-shadow: none !important;
 }
 
-nav,
+.nav,
 form,
 .resp-tabs-list,
-.accent { display: none !important; }
+.accent,
+#about-lts,
+#utility .inline-nav { display: none !important; }
 
 .print,
 #site-header h2 { display: inherit !important; }
@@ -33,4 +35,5 @@ img { page-break-inside: avoid; }
 
 #footer {
 	clear: both;
+	border-top: solid 1px #000;
 }

@@ -1465,10 +1465,12 @@ video {
     color: #000 !important;
     text-shadow: none !important; }
 
-  nav,
+  .nav,
   form,
   .resp-tabs-list,
-  .accent {
+  .accent,
+  #about-lts,
+  #utility .inline-nav {
     display: none !important; }
 
   .print,
@@ -1490,7 +1492,8 @@ video {
       width: 100%; }
 
   #footer {
-    clear: both; } }
+    clear: both;
+    border-top: solid 1px #000; } }
 [data-tooltip] {
   color: #000;
   cursor: pointer; }
