@@ -27,7 +27,6 @@ namespace Lafayette_Testing.Models
         public string AddressLine2 { get; set; }
 
         public string City { get; set; }
-        
         public string State { get; set; }
 
         [DisplayName("ZIP Code")]
