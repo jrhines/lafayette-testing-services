@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Lafayette_Testing.Models;
 
 namespace Lafayette_Testing.Controllers
 {
@@ -28,6 +29,12 @@ namespace Lafayette_Testing.Controllers
 
 			return View();
 		}
+
+        [HttpPost]
+	    public ActionResult Contact(ContactModel model)
+	    {
+	        return View();
+	    }
 
 		[ActionName("site-map")]
 		public ActionResult DataLoggers(string cleanUrlName)
