@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -35,6 +36,8 @@ namespace Lafayette_Testing.Controllers
 	    public ActionResult Contact(ContactModel model)
         {
             dynamic email = new Email("Contact");
+            email.To = ConfigurationManager.AppSettings["email:ContactToAddress"];
+            email.From = ConfigurationManager.AppSettings["email:ContactFromAddress"];
             email.FirstName = model.FirstName;
             email.LastName = model.LastName;
             email.BusinessType = model.BusinessType;
