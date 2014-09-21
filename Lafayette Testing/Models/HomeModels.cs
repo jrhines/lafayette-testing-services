@@ -28,11 +28,11 @@ namespace Lafayette_Testing.Models
 
         public string City { get; set; }
         public string State { get; set; }
+        public string Country { get; set; }
 
+        [Required]
         [DisplayName("ZIP Code")]
         public string ZipCode { get; set; }
-        
-        public string Country { get; set; }
 
         [DisplayName("Email Address")]
         public string CountryName { get; set; }
