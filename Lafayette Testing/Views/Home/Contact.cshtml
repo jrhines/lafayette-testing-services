@@ -33,7 +33,7 @@
 					<h1 class="section-title assistive-text">Contact Layfayette Testing Services</h1>
 				</header>
 				<div class="section-content"> 
-					<form action="/cgi-bin/formmail/formMailer.pl" id="contactForm" name="contactForm" method="post" class="col md-9 lg-7" novalidate="novalidate">
+					<form id="contactForm" name="contactForm" method="post" class="col md-9 lg-7" novalidate="novalidate">
 						<div>&#40;&#42;&#41; Required fields.</div>
 						<fieldset>
 							<legend>Personal Information</legend>
@@ -53,7 +53,7 @@
 
 							<div class="form-group">
 								<label for="businessType">Type of Business</label>
-								<input type="text" id="businessType" name="businessType" />
+								<input type="text" id="BusinessType" name="BusinessType" />
 							</div>
 
 							<div class="form-group">
@@ -145,19 +145,19 @@
 							<legend>Country</legend>
 							<div>
 								<label>
-									<input type="radio" name="country" value="usa" checked="checked" />
+									<input type="radio" name="Country" value="USA" checked="checked" />
 									USA</label>
 							</div>
 							<div>
 								<label>
-									<input type="radio" name="country" value="canada" />
+									<input type="radio" name="Country" value="Canada" />
 									Canada</label>
 							</div>
 							<div>
 								<label>
-									<input type="radio" name="country" value="other" />
+									<input type="radio" name="Country" value="Other" />
 									Other:</label>
-								<select id="select-country-name" name="select-country-name">
+								<select id="CountryName" name="CountryName">
 									<option value="">Please select&hellip;</option>
 									<option value="Afghanistan">Afghanistan</option>
 									<option value="Albania">Albania</option>

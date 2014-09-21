@@ -1,0 +1,17 @@
+﻿To: @ViewBag.To
+From: @ViewBag.From
+Subject: Contact Request
+
+The following contact request was received @DateTime.Now.ToString("MMMM d, yyyy a\\t h:mm tt"):
+
+Name: @ViewBag.FirstName @ViewBag.LastName
+Type of Business: @(ViewBag.BusinessType ?? "N/A")
+Address Line 1: @ViewBag.AddressLine1
+Address Line 2: @ViewBag.AddressLine2
+City: @ViewBag.City
+State: @ViewBag.State
+Country: @ViewBag.Country
+Phone: @ViewBag.Phone
+Email: @ViewBag.Email
+
+Comments: @ViewBag.Comments

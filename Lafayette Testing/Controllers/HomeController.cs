@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Lafayette_Testing.Models;
+using Postal;
 
 namespace Lafayette_Testing.Controllers
 {
@@ -28,6 +31,29 @@ namespace Lafayette_Testing.Controllers
 
 			return View();
 		}
+
+        [HttpPost]
+	    public ActionResult Contact(ContactModel model)
+        {
+            dynamic email = new Email("Contact");
+            email.To = ConfigurationManager.AppSettings["email:ContactToAddress"];
+            email.From = ConfigurationManager.AppSettings["email:ContactFromAddress"];
+            email.FirstName = model.FirstName;
+            email.LastName = model.LastName;
+            email.BusinessType = model.BusinessType;
+            email.AddressLine1 = model.AddressLine1;
+            email.AddressLine2 = model.AddressLine2;
+            email.City = model.City;
+            email.State = model.State;
+            email.ZipCode = model.ZipCode;
+            email.Country = model.Country == "Other" ? model.CountryName : model.Country;
+            email.Phone = model.Phone;
+            email.Email = model.Email;
+            email.Comments = model.Comments;
+            email.Send();
+
+	        return View();
+	    }
 
 		[ActionName("site-map")]
 		public ActionResult DataLoggers(string cleanUrlName)

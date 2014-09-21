@@ -40,6 +40,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Postal">
+      <HintPath>..\packages\Postal.Mvc4.1.2.0\lib\net40\Postal.dll</HintPath>
+    </Reference>
+    <Reference Include="RazorEngine">
+      <HintPath>..\packages\RazorEngine.3.3.0\lib\net40\RazorEngine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -50,6 +57,14 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
@@ -91,16 +106,8 @@
     <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web.Optimization">
       <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20715.0\lib\net40\System.Web.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -190,6 +197,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\HomeModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -258,55 +266,6 @@
     <Content Include="Content\images\cnc-precision-machining\thumbnails\DSC_0138.jpg" />
     <Content Include="Content\images\cnc-precision-machining\thumbnails\DSC_0139.jpg" />
     <Content Include="Content\images\cnc-precision-machining\thumbnails\DSC_0146.jpg" />
-    <Content Include="Content\images\complimentary-services-logo.gif" />
-    <Content Include="Content\images\complimentary-services\images\LTS081706_166.jpg" />
-    <Content Include="Content\images\complimentary-services\images\LTS081706_170.jpg" />
-    <Content Include="Content\images\complimentary-services\images\LTS081706_184.jpg" />
-    <Content Include="Content\images\complimentary-services\images\LTS081706_186.jpg" />
-    <Content Include="Content\images\complimentary-services\images\LTS081706_190.jpg" />
-    <Content Include="Content\images\complimentary-services\images\LTS081706_192.jpg" />
-    <Content Include="Content\images\complimentary-services\images\LTS081706_195.jpg" />
-    <Content Include="Content\images\complimentary-services\images\LTS081706_196.jpg" />
-    <Content Include="Content\images\complimentary-services\images\LTS081706_198.jpg" />
-    <Content Include="Content\images\complimentary-services\images\LTS081706_200.jpg" />
-    <Content Include="Content\images\complimentary-services\images\LTS081706_204.jpg" />
-    <Content Include="Content\images\complimentary-services\images\LTS081706_210.jpg" />
-    <Content Include="Content\images\complimentary-services\images\LTS081706_211.jpg" />
-    <Content Include="Content\images\complimentary-services\images\LTS081706_213.jpg" />
-    <Content Include="Content\images\complimentary-services\images\LTS081706_215.jpg" />
-    <Content Include="Content\images\complimentary-services\images\LTS081706_216.jpg" />
-    <Content Include="Content\images\complimentary-services\images\LTS081706_221.jpg" />
-    <Content Include="Content\images\complimentary-services\images\LTS081706_223.jpg" />
-    <Content Include="Content\images\complimentary-services\images\LTS081706_225.jpg" />
-    <Content Include="Content\images\complimentary-services\images\LTS081706_230.jpg" />
-    <Content Include="Content\images\complimentary-services\images\LTS081706_369.jpg" />
-    <Content Include="Content\images\complimentary-services\images\LTS081706_370.jpg" />
-    <Content Include="Content\images\complimentary-services\images\LTS081706_376.jpg" />
-    <Content Include="Content\images\complimentary-services\images\LTS081706_437.jpg" />
-    <Content Include="Content\images\complimentary-services\thumbnails\LTS081706_166.jpg" />
-    <Content Include="Content\images\complimentary-services\thumbnails\LTS081706_170.jpg" />
-    <Content Include="Content\images\complimentary-services\thumbnails\LTS081706_184.jpg" />
-    <Content Include="Content\images\complimentary-services\thumbnails\LTS081706_186.jpg" />
-    <Content Include="Content\images\complimentary-services\thumbnails\LTS081706_190.jpg" />
-    <Content Include="Content\images\complimentary-services\thumbnails\LTS081706_192.jpg" />
-    <Content Include="Content\images\complimentary-services\thumbnails\LTS081706_195.jpg" />
-    <Content Include="Content\images\complimentary-services\thumbnails\LTS081706_196.jpg" />
-    <Content Include="Content\images\complimentary-services\thumbnails\LTS081706_198.jpg" />
-    <Content Include="Content\images\complimentary-services\thumbnails\LTS081706_200.jpg" />
-    <Content Include="Content\images\complimentary-services\thumbnails\LTS081706_204.jpg" />
-    <Content Include="Content\images\complimentary-services\thumbnails\LTS081706_210.jpg" />
-    <Content Include="Content\images\complimentary-services\thumbnails\LTS081706_211.jpg" />
-    <Content Include="Content\images\complimentary-services\thumbnails\LTS081706_213.jpg" />
-    <Content Include="Content\images\complimentary-services\thumbnails\LTS081706_215.jpg" />
-    <Content Include="Content\images\complimentary-services\thumbnails\LTS081706_216.jpg" />
-    <Content Include="Content\images\complimentary-services\thumbnails\LTS081706_221.jpg" />
-    <Content Include="Content\images\complimentary-services\thumbnails\LTS081706_223.jpg" />
-    <Content Include="Content\images\complimentary-services\thumbnails\LTS081706_225.jpg" />
-    <Content Include="Content\images\complimentary-services\thumbnails\LTS081706_230.jpg" />
-    <Content Include="Content\images\complimentary-services\thumbnails\LTS081706_369.jpg" />
-    <Content Include="Content\images\complimentary-services\thumbnails\LTS081706_370.jpg" />
-    <Content Include="Content\images\complimentary-services\thumbnails\LTS081706_376.jpg" />
-    <Content Include="Content\images\complimentary-services\thumbnails\LTS081706_437.jpg" />
     <Content Include="Content\images\digital-radiography-testing\images\LTS050207_001.jpg" />
     <Content Include="Content\images\digital-radiography-testing\images\LTS050207_009.jpg" />
     <Content Include="Content\images\digital-radiography-testing\images\LTS050207_013.jpg" />
@@ -478,7 +437,6 @@
     <Content Include="Content\images\radiography-testing\thumbnails\LTS081706_331.jpg" />
     <Content Include="Content\images\radiography-testing\thumbnails\LTS081706_338.jpg" />
     <Content Include="Content\images\right-rail-cnc-machining.jpg" />
-    <Content Include="Content\images\right-rail-complimentary-services.jpg" />
     <Content Include="Content\images\right-rail-digital-radiography-testing.jpg" />
     <Content Include="Content\images\right-rail-entrance.jpg" />
     <Content Include="Content\images\right-rail-high-energy-x-ray-testing.jpg" />
@@ -565,6 +523,7 @@
     <Content Include="Content\scss\_forms.scss" />
     <Content Include="Content\scss\_variables.scss" />
     <Content Include="Content\scss\_tooltips.scss" />
+    <None Include="Properties\PublishProfiles\File System.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="robots.txt" />
     <Content Include="Scripts\jquery-1.8.2.js" />
@@ -585,7 +544,6 @@
     <Content Include="Scripts\libs\jquery\jquery-2.0.3.js" />
     <Content Include="Scripts\libs\jquery\jquery-2.0.3.min.js" />
     <Content Include="Scripts\libs\modernizr\modernizr-2.7.1.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\plugins\jquery.easyResponsiveTabs\jquery.easyResponsiveTabs.min.js" />
     <Content Include="Scripts\plugins\jquery.fancybox-2.1.5\blank.gif" />
     <Content Include="Scripts\plugins\jquery.fancybox-2.1.5\fancybox_loading%402x.gif" />
@@ -623,19 +581,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Scripts\_references.js" />
-    <Content Include="Images\accent.png" />
-    <Content Include="Images\bullet.png" />
-    <Content Include="Images\heroAccent.png" />
-    <Content Include="Images\orderedList0.png" />
-    <Content Include="Images\orderedList1.png" />
-    <Content Include="Images\orderedList2.png" />
-    <Content Include="Images\orderedList3.png" />
-    <Content Include="Images\orderedList4.png" />
-    <Content Include="Images\orderedList5.png" />
-    <Content Include="Images\orderedList6.png" />
-    <Content Include="Images\orderedList7.png" />
-    <Content Include="Images\orderedList8.png" />
-    <Content Include="Images\orderedList9.png" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
@@ -668,6 +613,9 @@
     <Content Include="Views\Services\ValueAddedServices.cshtml" />
     <Content Include="Views\Error\PageNotFound.cshtml" />
     <Content Include="Views\Error\InternalServerError.cshtml" />
+    <Content Include="Views\Emails\Web.config" />
+    <Content Include="Views\Emails\_ViewStart.cshtml" />
+    <Content Include="Views\Emails\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
