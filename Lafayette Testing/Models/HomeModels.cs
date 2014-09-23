@@ -49,5 +49,7 @@ namespace Lafayette_Testing.Models
 
         [StringLength(500)]
         public string Comments { get; set; }
+
+        public bool ShowThanksMessage { get; set; }
     }
 }

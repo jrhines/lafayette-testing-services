@@ -29,12 +29,13 @@ namespace Lafayette_Testing.Controllers
 		{
 			ViewBag.Message = "Your contact page.";
 
-			return View();
+			return View(new ContactModel());
 		}
 
         [HttpPost]
 	    public ActionResult Contact(ContactModel model)
         {
+            // Build the contact email using a dynamic object for flexibility
             dynamic email = new Email("Contact");
             email.To = ConfigurationManager.AppSettings["email:ContactToAddress"];
             email.From = ConfigurationManager.AppSettings["email:ContactFromAddress"];
@@ -52,7 +53,10 @@ namespace Lafayette_Testing.Controllers
             email.Comments = model.Comments;
             email.Send();
 
-	        return View();
+            // Set the ShowThanksMessage flag to provide user feedback on the page.
+            model.ShowThanksMessage = true;
+
+	        return View(model);
 	    }
 
 		[ActionName("site-map")]
