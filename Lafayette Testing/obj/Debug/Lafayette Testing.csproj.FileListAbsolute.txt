@@ -14,12 +14,9 @@ C:\WebsitesLC\Lafayette Testing\Lafayette Testing\bin\Microsoft.Web.Infrastructu
 C:\WebsitesLC\Lafayette Testing\Lafayette Testing\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
 C:\WebsitesLC\Lafayette Testing\Lafayette Testing\bin\Microsoft.Web.WebPages.OAuth.dll
 C:\WebsitesLC\Lafayette Testing\Lafayette Testing\bin\Newtonsoft.Json.dll
-C:\WebsitesLC\Lafayette Testing\Lafayette Testing\bin\System.Net.Http.Formatting.dll
 C:\WebsitesLC\Lafayette Testing\Lafayette Testing\bin\System.Spatial.dll
 C:\WebsitesLC\Lafayette Testing\Lafayette Testing\bin\System.Web.Helpers.dll
-C:\WebsitesLC\Lafayette Testing\Lafayette Testing\bin\System.Web.Http.dll
 C:\WebsitesLC\Lafayette Testing\Lafayette Testing\bin\System.Web.Http.OData.dll
-C:\WebsitesLC\Lafayette Testing\Lafayette Testing\bin\System.Web.Http.WebHost.dll
 C:\WebsitesLC\Lafayette Testing\Lafayette Testing\bin\System.Web.Mvc.dll
 C:\WebsitesLC\Lafayette Testing\Lafayette Testing\bin\System.Web.Optimization.dll
 C:\WebsitesLC\Lafayette Testing\Lafayette Testing\bin\System.Web.Razor.dll
@@ -31,10 +28,7 @@ C:\WebsitesLC\Lafayette Testing\Lafayette Testing\bin\WebMatrix.Data.dll
 C:\WebsitesLC\Lafayette Testing\Lafayette Testing\bin\WebMatrix.WebData.dll
 C:\WebsitesLC\Lafayette Testing\Lafayette Testing\bin\EntityFramework.xml
 C:\WebsitesLC\Lafayette Testing\Lafayette Testing\bin\Newtonsoft.Json.xml
-C:\WebsitesLC\Lafayette Testing\Lafayette Testing\bin\System.Net.Http.Formatting.xml
 C:\WebsitesLC\Lafayette Testing\Lafayette Testing\bin\System.Web.Helpers.xml
-C:\WebsitesLC\Lafayette Testing\Lafayette Testing\bin\System.Web.Http.xml
-C:\WebsitesLC\Lafayette Testing\Lafayette Testing\bin\System.Web.Http.WebHost.xml
 C:\WebsitesLC\Lafayette Testing\Lafayette Testing\bin\System.Web.Mvc.xml
 C:\WebsitesLC\Lafayette Testing\Lafayette Testing\bin\System.Web.Razor.xml
 C:\WebsitesLC\Lafayette Testing\Lafayette Testing\bin\System.Web.WebPages.xml
