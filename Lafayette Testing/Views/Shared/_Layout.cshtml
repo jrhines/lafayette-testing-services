@@ -70,12 +70,11 @@
 					<div class="col sm-7 last">
 						<h6 class="assistive-text">Main navigation</h6>
 						<a href="#content" class="skip-link assistive-text">Skip to content</a>
-	@RenderSection("featured", required: false) 
 						<p class="tel primary">1-800-337-4884</p>
 						<ul class="nav group">
 							<li class="nav-item" id="nav-item-home">@Html.ActionLink("Home", "Index", "Home")</li>
 							<li class="nav-item" id="nav-item-nts">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Nondestructive Testing Services<span class="arrow arrow-down"></span></a>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Non Destructive Testing Services<span class="arrow arrow-down"></span></a>
 								<ul class="dropdown-menu">
 									<li>@Html.ActionLink("Ultrasonics Testing", "ultrasonics-testing", "services")</li>
 									<li>@Html.ActionLink("Liquid Penetrant Testing", "liquid-penetrant-testing", "services")</li>
@@ -105,7 +104,7 @@
             <footer id="site-footer" role="contentinfo">
 				<nav id="footer-nav" class="row">
 					<div class="col sm-5">
-						<h6>Nondestructive Testing Services</h6>
+						<h6>Non Destructive Testing Services</h6>
 						<ul class="reduced nts-links-a">
 							<li>@Html.ActionLink("Ultrasonics Testing", "ultrasonics-testing", "services")</li>
 							<li>@Html.ActionLink("Liquid Penetrant Testing", "liquid-penetrant-testing", "services")</li>
@@ -130,7 +129,7 @@
 						<h6>@Html.ActionLink("About LTS", "about", "Home")</h6>
 					</div>
 					<div class="col sm-2">
-						<h6>@Html.ActionLink("Contact", "contact", "Home")</h6>
+						<h6>@Html.ActionLink("Contact LTS", "contact", "Home")</h6>
 						<span class="tel primary">1-800-337-4884</span>
 					</div>
 				</nav>
