@@ -7,43 +7,46 @@
 
 <section class="section row">
 	<div id="primary">
-		<nav class="breadcrumb col sm-12" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="">
-			<h6 class="assistive-text">Breadcrumb navigation</h6>
-			<ol>
-				<li><a itemprop="url" href="/"><span itemprop="title">Home</span></a></li>
-				<li><span itemprop="title">@ViewBag.Title</span></li>
-			</ol>
-		</nav>
-		<header class="section-header col">
-			<h1 class="section-title">@ViewBag.Title</h1>
-		</header>
-		<div class="section-content col sm-4">
-			<ul>
-				<li>@Html.ActionLink("Home", "Index", "Home")</li>
-				<li>@Html.ActionLink("About Us", "about", "Home")</li>
-				<li>@Html.ActionLink("Contact Us", "contact", "Home")</li>
-				<li>@Html.ActionLink("Usage Agreement", "usage-agreement", "Home")</li>
-				<li>@Html.ActionLink("Privacy Statement", "privacy-statement", "Home")</li>
-			</ul>
-		</div>
-		<div class="section-content col sm-4">
-			<ul>
-				<li>@Html.ActionLink("Ultrasonics Testing", "ultrasonics-testing", "services")</li>
-				<li>@Html.ActionLink("Radiography Testing", "radiography-testing", "services")</li>
-				<li>@Html.ActionLink("Digital Radiography Testing", "digital-radiography-testing", "services")</li>
-				<li>@Html.ActionLink("High Energy X-Ray Testing", "high-energy-x-ray-testing", "services")</li>
-				<li>@Html.ActionLink("Magnetic Particle Testing", "magnetic-particle-testing", "services")</li>
-				<li>@Html.ActionLink("Liquid Penetrant Testing", "liquid-penetrant-testing", "services")</li>
-			</ul>
-		</div>
-		<div class="section-content col sm-4">
-			<ul>
-				<li>@Html.ActionLink("CNC Precision Machining", "cnc-precision-machining", "services")</li>
-				<li>@Html.ActionLink("Welding", "value-added-services", "services")</li>
-				<li>@Html.ActionLink("Mechanical Polishing", "value-added-services", "services")</li>
-				<li>@Html.ActionLink("Parts Washing", "value-added-services", "services")</li>
-                <li>@Html.ActionLink("Sandblasting", "value-added-services", "services")</li>
-			</ul>
+		<div class="section-content col sm-1">&#160;</div>
+		<div class="section-content col sm-10">
+			<nav class="breadcrumb" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="">
+				<h6 class="assistive-text">Breadcrumb navigation</h6>
+				<ol>
+					<li><a itemprop="url" href="/"><span itemprop="title">Home</span></a></li>
+					<li><span itemprop="title">@ViewBag.Title</span></li>
+				</ol>
+			</nav>
+			<header class="section-header">
+				<h1 class="section-title">@ViewBag.Title</h1>
+			</header>
+			<div class="section-content col sm-4">
+				<ul>
+					<li>@Html.ActionLink("Home", "Index", "Home")</li>
+					<li>@Html.ActionLink("About Us", "about", "Home")</li>
+					<li>@Html.ActionLink("Contact Us", "contact", "Home")</li>
+					<li>@Html.ActionLink("Usage Agreement", "usage-agreement", "Home")</li>
+					<li>@Html.ActionLink("Privacy Statement", "privacy-statement", "Home")</li>
+				</ul>
+			</div>
+			<div class="section-content col sm-4">
+				<ul>
+					<li>@Html.ActionLink("Ultrasonics Testing", "ultrasonics-testing", "services")</li>
+					<li>@Html.ActionLink("Radiography Testing", "radiography-testing", "services")</li>
+					<li>@Html.ActionLink("Digital Radiography Testing", "digital-radiography-testing", "services")</li>
+					<li>@Html.ActionLink("High Energy X-Ray Testing", "high-energy-x-ray-testing", "services")</li>
+					<li>@Html.ActionLink("Magnetic Particle Testing", "magnetic-particle-testing", "services")</li>
+					<li>@Html.ActionLink("Liquid Penetrant Testing", "liquid-penetrant-testing", "services")</li>
+				</ul>
+			</div>
+			<div class="section-content col sm-4">
+				<ul>
+					<li>@Html.ActionLink("CNC Precision Machining", "cnc-precision-machining", "services")</li>
+					<li>@Html.ActionLink("Welding", "value-added-services", "services")</li>
+					<li>@Html.ActionLink("Mechanical Polishing", "value-added-services", "services")</li>
+					<li>@Html.ActionLink("Parts Washing", "value-added-services", "services")</li>
+					<li>@Html.ActionLink("Sandblasting", "value-added-services", "services")</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </section>

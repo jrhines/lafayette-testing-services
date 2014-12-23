@@ -61,23 +61,25 @@ table {
 }
 
 .nav {
-	background-color: #222;
-
+	padding: 0 1em .5em 1em;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: .9em;
+	
 	li {
-		position: relative;
 		margin: 0;
 	}
 
 	a {
 		display: block;
 		text-decoration: none;
-		padding: .5em 1em;
+		padding: .5em;
 	}
 
 	.nav-item > a {
-		color: #ccc;
+		color: #CCC;
 
-		.arrow-down { border-top-color: #ccc; }
+		.arrow-down { border-top-color: #CCC; }
 
 		&:hover {
 			color: #FFF;
@@ -93,8 +95,8 @@ table {
 	}
 
 	.nav-item.active > a {
-		background-color: #2C60C6;
-		color: #FFF;
+		background-color: #FFF;
+		color: #2C60C6;
 
 		.arrow-down { border-top-color: #FFF; }
 	}
@@ -114,23 +116,26 @@ table {
 
 .dropdown-menu {
 	position: absolute;
-	top: 36px;
+	top: 5.9em;
 	left: -999em;
 	z-index: 99;
 	background-color: #FFF;
-	min-width: 200px;
 	width: 100%;
 	border: 1px solid #999;
 	border-top-width: 0;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.25);
-	overflow: hidden;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.25);
+	overflow: visible;
+
+	li {
+		display: inline-block;
+	}
 
 	a {
 		display: block;
 		color: inherit;
 		text-align: left;
 
-		&:hover { background-color: #eee; }
+		&:hover { color: #2C60C6; }
 	}
 	/*
 	@media only screen and (max-width: 767px) {
