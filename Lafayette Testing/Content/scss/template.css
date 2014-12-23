@@ -116,7 +116,8 @@ table th {
   	}
   }*/ }
   .dropdown-menu li {
-    display: inline-block; }
+    display: inline-block;
+    margin: 0 2em 0 0; }
   .dropdown-menu a {
     display: block;
     color: inherit;
