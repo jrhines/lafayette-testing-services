@@ -1179,6 +1179,9 @@ footer {
     float: none;
     width: auto;
     list-style-type: disc; }
+  #benefits-narratives #capabilities-logo {
+    display: block;
+    margin: 2em auto; }
 
 #benefits-narrative-central {
   margin: 0 1.5em; }
