@@ -17,9 +17,23 @@
 
 // containers
 
+.home #primary {
+	display: block;
+}
+
+#primary {
+	@include flexbox;
+	@include flex-wrap(wrap);
+}
+
 .accent {
-	padding: 0 0 80% 0;
+	padding: 0;
 	background-color: #224998;
+	@include flex-grow(1);
+
+	img {
+		width: 100%;
+	}
 }
 
 // error 
