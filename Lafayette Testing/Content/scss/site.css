@@ -1045,12 +1045,11 @@ input[type="text"].datepicker {
   font-size: 122%;
   font-weight: bold;
   text-transform: uppercase; }
-
-#site-title span {
-  position: absolute;
-  top: 1.5em;
-  margin: 0 0 0 10px;
-  color: #001B51; }
+  #site-title span {
+    position: absolute;
+    top: 1.5em;
+    margin: 0 0 0 10px;
+    color: #001B51; }
 
 .tel.primary {
   padding: .5em 1.4em 0 0;
@@ -1063,6 +1062,20 @@ input[type="text"].datepicker {
 
 #site-nav .col {
   padding: 0; }
+  #site-nav .col span.call-to-action a {
+    position: absolute;
+    right: 27%;
+    padding: .25em .5em;
+    margin: 1em 0;
+    border: solid 1px #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: bold;
+    color: #001C52;
+    background-color: #E1DFDF; }
+  #site-nav .col span.call-to-action a:hover {
+    color: #2d66d2; }
 
 #site-nav .sm-7 {
   background-color: #001c52; }

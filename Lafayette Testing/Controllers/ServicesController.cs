@@ -47,10 +47,10 @@ namespace Lafayette_Testing.Views.Services
 			return View("DigitalRadiographyTesting");
 		}
 
-		[ActionName("radiography-testing")]
+		[ActionName("low-energy-x-ray-testing")]
 		public ActionResult DataLoggers5(string cleanUrlName)
 		{
-			return View("RadiographyTesting");
+			return View("LowEnergyXRayTesting");
 		}
 
 		[ActionName("cnc-precision-machining")]

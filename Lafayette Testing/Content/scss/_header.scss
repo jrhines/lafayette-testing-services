@@ -3,13 +3,13 @@
 	font-size: 122%; 
 	font-weight: bold; 
 	text-transform: uppercase;
-}
 
-#site-title span {
-	position: absolute;
-	top: 1.5em;
-	margin: 0 0 0 10px;
-	color: #001B51;
+	span {
+		position: absolute;
+		top: 1.5em;
+		margin: 0 0 0 10px;
+		color: #001B51;
+	}
 }
 
 .tel.primary {
@@ -24,6 +24,24 @@
 
 #site-nav .col {
 	padding: 0;
+
+	span.call-to-action a {
+		position: absolute;
+		right: 27%;
+		padding: .25em .5em;
+		margin: 1em 0;
+		border: solid 1px #FFF;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 90%;
+		font-weight: bold;
+		color: #001C52;
+		background-color: #E1DFDF;
+	}
+
+	span.call-to-action a:hover {
+		color: $linkColorHover;
+	}
 }
 
 #site-nav .sm-7 {
