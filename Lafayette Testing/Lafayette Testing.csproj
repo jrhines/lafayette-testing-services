@@ -345,6 +345,7 @@
     <Content Include="Content\images\liquid-penetrant-testing\thumbnails\LTS081706_106.jpg" />
     <Content Include="Content\images\liquid-penetrant-testing\thumbnails\LTS081706_111.jpg" />
     <Content Include="Content\images\liquid-penetrant-testing\thumbnails\LTS081706_115.jpg" />
+    <Content Include="Content\images\low-energy-x-ray-testing-logo.gif" />
     <Content Include="Content\images\low-energy-x-ray-testing\images\IMG_2573.jpg" />
     <Content Include="Content\images\low-energy-x-ray-testing\images\LTS081706_245.jpg" />
     <Content Include="Content\images\low-energy-x-ray-testing\images\LTS081706_247.jpg" />
@@ -430,14 +431,13 @@
     <Content Include="Content\images\magnetic-particle-testing\thumbnails\LTS081706_142.jpg" />
     <Content Include="Content\images\magnetic-particle-testing\thumbnails\LTS081706_147.jpg" />
     <Content Include="Content\images\magnetic-particle-testing\thumbnails\LTS081706_156.jpg" />
-    <Content Include="Content\images\radiography-testing-logo.gif" />
     <Content Include="Content\images\right-rail-cnc-machining.jpg" />
     <Content Include="Content\images\right-rail-digital-radiography-testing.jpg" />
     <Content Include="Content\images\right-rail-entrance.jpg" />
     <Content Include="Content\images\right-rail-high-energy-x-ray-testing.jpg" />
     <Content Include="Content\images\right-rail-liquid-penetrant-testing.jpg" />
+    <Content Include="Content\images\right-rail-low-energy-x-ray-testing.jpg" />
     <Content Include="Content\images\right-rail-magnetic-particle-testing.jpg" />
-    <Content Include="Content\images\right-rail-radiography-testing.jpg" />
     <Content Include="Content\images\right-rail-ultrasonics-testing.jpg" />
     <Content Include="Content\images\right-rail-value-added-services.jpg" />
     <Content Include="Content\images\ultrasonics-testing-logo.gif" />
